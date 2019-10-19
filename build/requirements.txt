@@ -1,0 +1,9 @@
+flask-restplus
+Flask-SQLAlchemy==2.1
+sqlalchemy_utils
+flask_cors
+requests
+jinja2
+Flask-Script
+mysqlclient
+kafka-python

@@ -28,10 +28,25 @@ resource "digitalocean_droplet" "webserver" {
           "export PATH=$PATH:/usr/bin",
           # install git repo and and server up the index page
           "sudo apt-get update",
-          "sudo apt-get -y install git",
+	  "sudo apt-get install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common git",
+          "curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -",
+	  "sudo add-apt-repository \"deb [arch=amd64] https://download.docker.com/linux/debian$(lsb_release -cs) stable\"",
+          "sudo apt-get update",
+          "sudo apt-get install docker-ce docker-ce-cli containerd.io",
           "git clone ${var.repo}",
           "cd webportal",
-          "nohup python3 -m http.server 80 &"
+          "./deploy.sh docker",
+          "sleep 20"
         ]
+
       }
+}
+
+
+
+resource "digitalocean_record" "A-staging" {
+  domain = "detroitblacktech.org"
+  type = "A"
+  name = "staging"
+  value = "${digitalocean_droplet.webserver.ipv4_address}"
 }

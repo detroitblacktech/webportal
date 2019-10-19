@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+
+<html lang="en" class="full-height">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="dSIPRouter allows you to quickly turn Kamailio into an easy to use SIP Service Provider platform to enable SIP Trunking and PBX Hosting">
+    <meta name="author" content="">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-47455038-2"></script>
+    <script>
+    	window.dataLayer = window.dataLayer || [];
+    	function gtag(){dataLayer.push(arguments);}
+    	gtag('js', new Date());
+        gtag('config', 'UA-47455038-2');
+   </script>
+
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:site_name" content=""/>
+    <meta property="og:description" content=""/>
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="https://twitter.com/dsiprouter" />
+    <meta name="twitter:card" content="" />
+
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>{% block title %}{% endblock %}</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+    <!-- Custom styles for this template -->
+    <link href="{{url_for('static', filename='./css/navbar-top-fixed.css')}}" rel="stylesheet">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="{{url_for('static', filename='./css/animate.css')}}">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="{{url_for('static', filename='./css/icomoon.css')}}">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="{{url_for('static', filename='./css/bootstrap.css')}}">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="{{url_for('static', filename='./css/magnific-popup.css')}}">
+    <!-- Superfish -->
+    <link rel="stylesheet" href="{{url_for('static', filename='./css/superfish.css')}}">
+
+    <link rel="stylesheet" href="{{url_for('static', filename='./css/style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='./css/styles.css')}}">
+
+    <!-- Modernizr JS -->
+    <script src="{{url_for('static', filename='./js/modernizr-2.6.2.min.js')}}"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="{{url_for('static', filename='./js/respond.min.js')}}"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+    <div id="fh5co-wrapper">
+    <div id="fh5co-page">
+    <div id="fh5co-header">
+      <header id="fh5co-header-section">
+        <div class="nav-header">
+          <a href="/" id="fh5co-logo"><img class="img-responsive" src={{url_for('static', filename='./images/dsiprouter_150x43.png')}} width="150" height="43"/></a>
+          <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+          <!-- START #fh5co-menu-wrap -->
+          <nav id="fh5co-menu-wrap" role="navigation">
+            <ul class="sf-menu" id="fh5co-primary-menu">
+              <li>
+                <a href="#fh5co-usecases-section" class="fh5co-sub-ddown">Use Cases</a>
+              </li>
+              <li>
+                <a href="#fh5co-features" class="fh5co-sub-ddown">Get Software</a>
+              </li>
+              <li>
+                <a href="https://dsiprouter.readthedocs.io/en/latest/" target="_blank">Documentation</a>
+              </li>
+              <li><a href="#fh5co-support-section">Get Support & Training</a></li>
+              <li>
+                <a href="#" class="fh5co-sub-ddown disabled">Launch Cloud Instance (Coming Soon)</a>
+              </li>
+             <!--  <li><a href="#">Blog</a></li> -->
+              <li><a href="#fh5co-contact">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </div>
+
+    <div class="fh5co-hero">
+      <div class="fh5co-overlay"></div>
+      <div class="fh5co-cover" data-stellar-background-ratio="0.5">
+       <div class="container-fluid">
+          <div class="desc row">
+            <div class="col-sm-6 col-xs-12">
+		    <h2><strong>Modern Approach for Adopting Kamailio <sup>&reg;</sup></strong></h2>
+		    <a href="http://demo.dsiprouter.org:5000" target="_blank"><button type="button" class="btn btn-success">Checkout Demo</button></a> <h4 class="action-message">[ username:admin / password: ZmIwMTdmY2I5NjE4 ]</h4>
+            </div>
+            <div class="col-sm-6 col-xs-12">
+		    <iframe class="embedded-video" src="https://www.youtube.com/embed/OgTZLYYx1u8?autoplay=1&controls=0&amp;start=120&mute=1&loop=1&playlist=OgTZLYYx1u8=" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	    </div>
+          </div>
+        </div>
+      </div>
+
+    <div id="fh5co-usecases-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 text-center heading-section">
+            <h3>Use Cases</h3>
+            <p>
+              dSIPRouter can be used to implement different use cases within minutes
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-6 col-sm-6">
+            <div class="services">
+              <span><i class="icon-mobile"></i></span>
+              <h3>PBX Hosting</h3>
+              <p>
+                Proxy SIP Endpoint requests to a multi-tenant PBX such as FusionPBX or single-tenant such as FreePBX
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <div class="services">
+              <span><i class="icon-cloud"></i></span>
+              <h3>SIP Trunking</h3>
+              <p>
+               Provide services to customers that have an on-premise PBX such as FreePBX, FusionPBX, Avaya, etc. We have support for IP and credential based authentication
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2 text-center heading-section">
+        <a href="https://dsiprouter.readthedocs.io/en/latest/use-cases.html" target="_blank" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">See Use Case Examples</a>
+	     </div>
+      </div>
+    </div>
+
+     <div id="fh5co-features">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="feature-left">
+                <span class="icon">
+                  <i class="icon-happy"></i>
+                </span>
+                <div class="feature-copy">
+                  <h3>Quick Install</h3>
+		  <p>You can quickly install on Debian and CentOS.  It takes about 4-9  minutes to install</p>
+          <a href="https://dsiprouter.readthedocs.io/en/latest/installing.html" target="_blank" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Install Instructions</a>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="feature-left">
+                <span class="icon">
+                  <i class="icon-mobile"></i>
+                </span>
+                <div class="feature-copy">
+                  <h3>Amazon AMI</h3>
+                  <p>We have an Amazon AMI that will allow you to start working with dSIPRouter immediately
+		  . This is perfect when you want to get up and going fast, especially when your PBX's are on AWS as well.  There's a Free 30 day trial - Check it out!</p>
+          <a href="https://aws.amazon.com/marketplace/search/results?x=0&y=0&searchTerms=dsiprouter/" target="_blank" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Get Amazon Images</a>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-4">
+              <div class="feature-left">
+                <span class="icon">
+                  <i class="icon-browser"></i>
+                </span>
+                <div class="feature-copy">
+                  <h3>dSIPRouter Cloud (Coming Soon)</h3>
+                  <p>You will be able to launch an instance of dSIPRouter and have the ability to automatically
+		  configure HA mode by clicking a button.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <div id="fh5co-support-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 text-center heading-section">
+            <h3>Support & Training Options</h3>
+            <p>
+              We have a few different support ptions to choose from and one training course
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-4 col-sm-4">
+            <div class="services">
+              <span><i class="icon-users"></i></span>
+              <h3>Free $0</h3>
+              <p>
+                <a href="https://groups.google.com/forum/#!forum/dsiprouter" target="_blank">dSIPRouter User Forum</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <div class="services">
+              <span><i class="icon-bell"></i></span>
+              <h3>$754/Per Person</h3>
+              <p>
+                <a href="https://dopensource.com/product/dsiprouter-admin-course/" target="_blank">dSIPRouter 1 Day Admin Course</a>
+              </p>
+          <a href="https://dopensource.com/product/dsiprouter-admin-course/" target="_blank" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Purchase Course Now</a>
+            </div>
+	  </div>
+          <div class="col-md-4 col-sm-4">
+            <div class="services">
+		    <a href="https://dopensource.com/product/dsiprouter-annual-support/" target="_blank"><span><i class="icon-coin-dollar"></i></span></a>
+              <h3>Paid $2100/Annually</h3>
+	      <p>
+                Our standard paid support offering provides remote troubleshooting on dSIPRouter and dSIPRouter Enterprise.  You can open support cases via telephone and using our web portal from 9am-8pm EST.
+              </p>
+          <a href="https://dopensource.com/product/dsiprouter-annual-support/" target="_blank" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Purchase Support Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="fh5co-contact">
+      <div id="contact-thankyou">
+         <span id='close' onclick='$(this).parent().hide();$("#contact-form")[0].reset();$("#contact-form").fadeIn();'>x
+        </span>
+        <h2>Thanks...</h2>
+        <small>We'll get back to you as quickly as possible</small>
+      </div>
+      <div class="container">
+        <form action="" method="post" data-form-title="dSIPRouter Contact Form" id="contact-form">
+          <div class="row">
+            <div class="col-md-6">
+              <h3 class="section-title">Contact Us</h3>
+              <p>
+                We would love to hear from you! Give us a call, fill out the contact form or click the live chat link..
+              </p>
+              <ul class="contact-info">
+                <li><i class="icon-location-pin"></i><a href="https://www.google.com/maps/place/4160+Cass+Ave+Suite+B,+Detroit,+MI+48201" target="_blank">4160 Cass Ave, Detroit, MI 48201</a></li>
+                <li><i class="icon-phone2"></i><a href="tel://8889072085">888-907-2085</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" id="name" class="form-control" placeholder="Name" name="name" data-form-field="Name" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="tel" id="phone" name="phone" data-form-field="phone" class="form-control" placeholder="Phone">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input type="email" id="email" name="email" data-form-field="email" class="form-control" placeholder="Email" required>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <textarea name="message" id="message" class="form-control" rows="3" data-form-field="Message" placeholder="Message" style="resize:none"  cols="30" rows="7"></textarea>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input type="submit" value="Send Message" class="btn btn-primary btn-lg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <div id="footer">
+        <div class="fh5co-copyright text-center">
+          <p>&copy; 2018 dSIPRouter. All Rights Reserved. <span>Designed with <i class="icon-heart"></i> in Detroit.</span></p>
+        </div>
+      </div>
+    </footer>
+
+
+  </div>
+  <!-- END fh5co-page -->
+
+  </div>
+  <!-- END fh5co-wrapper -->
+
+  <!-- JQuery -->
+   <script
+    src="https://code.jquery.com/jquery-2.1.4.min.js"
+    integrity="sha256-8WqyJLuWKRBVhxXIL1jBDD7SDxU936oZkCnxQbWwJVw="
+    crossorigin="anonymous"></script>
+
+  <!-- jQuery Easing -->
+  <script src="{{url_for('static', filename='./js/jquery.easing.1.3.js')}}"></script>
+
+   <!-- Bootstrap -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <!-- Waypoints -->
+  <script src="{{url_for('static', filename='./js/jquery.waypoints.min.js')}}"></script>
+
+  <!-- Stellar -->
+  <script src="{{url_for('static', filename='./js/jquery.stellar.min.js')}}"></script>
+
+  <!-- Superfish -->
+  <script src="{{url_for('static', filename='./js/hoverIntent.js')}}"></script>
+  <script src="{{url_for('static', filename='./js/superfish.js')}}"></script>
+
+  <!-- Magnific Popup -->
+  <script src="{{url_for('static', filename='./js/jquery.magnific-popup.min.js')}}"></script>
+  <script src="{{url_for('static', filename='./js/magnific-popup-options.js')}}"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+
+
+<!-- livezilla.net PLACE SOMEWHERE IN BODY -->
+
+<script type="text/javascript" id="5e6615435e2894476e905fd9c9ad28f4" src="//dopensource.com/livezilla/script.php?id=5e6615435e2894476e905fd9c9ad28f4" defer></script>
+
+<!-- livezilla.net PLACE SOMEWHERE IN BODY -->
+
+  <!-- Main JS -->
+  <script src="{{url_for('static', filename='./js/main.js')}}"></script>
+
+  <!-- Add any client js logic here -->
+  {% block frontend_js %}
+  {% endblock %}
+
+  </body>
+</html>
