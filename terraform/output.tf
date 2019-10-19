@@ -1,3 +1,3 @@
-output "ip" {
-  value = "${digitalocean_droplet.webserver.*.ipv4_address}"
+output "kamailio-server-ssh" {
+  value = "${digitalocean_droplet.kamailio-server.*.ipv4_address}"
 }

@@ -1,17 +1,16 @@
 variable "do_token" {
-
 }
 
 variable "prefix" {
-
+	default =""
 }
 
 variable "pvt_key" {
-  default = "~/.ssh/dbt_dev"
+  default = "~/.ssh/dopensource-training"
 }
 
 variable "dropletname" {
-  default = "webserver"
+  default = "kamailio-server"
 }
 
 variable "number_of_servers" {

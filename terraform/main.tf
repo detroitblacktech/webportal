@@ -4,11 +4,11 @@ provider "digitalocean" {
 
 
 data "digitalocean_ssh_key" "ssh_key" {
-  name = "dbt_dev"
+  name = "dopensource-training"
 }
 
 
-resource "digitalocean_droplet" "webserver" {
+resource "digitalocean_droplet" "kamailio-server" {
         name = "${var.dropletname}-${count.index}"
         count = "${var.number_of_servers}"
         region = "nyc1"
@@ -27,17 +27,13 @@ resource "digitalocean_droplet" "webserver" {
           inline = [
           "export PATH=$PATH:/usr/bin",
           # install git repo and and server up the index page
-          "sudo apt-get update;sudo apt-get install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common git",
+          "sudo mkdir -p ~/bits/kamailio",
+          "sudo apt-get update; sudo apt-get install -y git gcc g++ flex bison default-libmysqlclient-dev make autoconf mariadb-server",
           "sleep 20",
-          "curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -",
-	  "sudo add-apt-repository \"deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable\"",
-          "sudo apt-get update",
+          "cd ~/bits",
+	  "git clone --depth 1 --no-single-branch https://github.com/kamailio/kamailio -b 5.3 kamailio",
+	  "cd ~/;git clone https://github.com/dOpensource/kamailio-admin-training",
           "sleep 20",
-          "sudo apt-get install -y docker-ce docker-ce-cli containerd.io",
-          "git clone ${var.repo} -b staging",
-          "cd webportal",
-          "./deploy.sh docker",
-          "sleep 20"
         ]
 
       }
@@ -45,9 +41,9 @@ resource "digitalocean_droplet" "webserver" {
 
 
 
-resource "digitalocean_record" "A-staging" {
-  domain = "detroitblacktech.org"
-  type = "A"
-  name = "staging"
-  value = "${digitalocean_droplet.webserver.ipv4_address}"
-}
+#resource "digitalocean_record" "A-staging" {
+#  domain = "detroitblacktech.org"
+#  type = "A"
+#  name = "staging"
+#  value = "${digitalocean_droplet.webserver.ipv4_address}"
+#}
