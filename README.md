@@ -7,7 +7,7 @@ we rebuild the server each time a new change is committed versus trying to upgra
 
 ## Setting up a Development Environment
 
- Please ensure docker is installed on your computer
+Please ensure docker is installed on your computer
 
 ### Clone the repo
 ```
@@ -16,16 +16,16 @@ cd webportal
 
 ```
 
-#### Using a Mac  
+#### Using on Mac  
 ```
 ./deploy.sh Docker dev
 ```
 
-#### Using a PC
+#### Using on PC (haven't tested on PC - please fix)
 ```
 docker build -t dsiprouter .
 docker rm -f dsiprouter-app
-docker run -p 80:80 -dit --restart always -v $(pwd):/usr/src/dbt --name dsiprouter-app  dsiprouter
+docker run -p 80:80 -dit --restart always -v $PATH:/usr/src/dbt --name dsiprouter-app  dsiprouter
 ```
 
 ### Access the Website Local
