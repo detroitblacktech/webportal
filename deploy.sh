@@ -6,6 +6,7 @@ case "$1" in
 	;;
 	"docker")
 	docker build -t dsiprouter .
+	sleep 30
 	docker rm -f dsiprouter-app
 	docker run -p 80:80 -dit --restart always --name dsiprouter-app dsiprouter
 	;;	
