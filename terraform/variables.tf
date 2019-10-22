@@ -13,8 +13,16 @@ variable "dropletname" {
   default = "kamailio-server"
 }
 
+variable "fusionpbx-dropletname" {
+  default = "fusionpbx"
+}
+
 variable "number_of_servers" {
   default = "1"
+}
+
+variable "domainname" {
+  default = "dopensource.net"
 }
 
 variable "repo" {
