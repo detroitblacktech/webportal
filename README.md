@@ -7,32 +7,38 @@ we rebuild the server each time a new change is committed versus trying to upgra
 
 ## Setting up a Development Environment
 
-Please ensure docker is installed on your computer
+### Requirements
+| Package            | Version | Notes|
+|--------------------|---------|------|
+|[Git]               | Latest  | 
+|[Docker]            | 17.12.0+| Docker Download[(mac)](1)[(windows)](2)[(linux)](3) is highly recommended vs a package manager (homebrew, choco, apt, etc)
+|[Docker Compose]    | 3.7+    |
+|[Python]            | 3.4+    | Only required for running outside of docker
 
 ### Clone the repo
-```
+```bash
 git clone https://github.com/detroitblacktech/webportal -b staging
 cd webportal
-
 ```
 
-#### Using on Mac  
-```
-./deploy.sh Docker dev
-```
-
-#### Using on PC (haven't tested on PC - please fix)
-```
-docker build -t dsiprouter .
-docker rm -f dsiprouter-app
-docker run -p 80:80 -dit --restart always -v $PATH:/usr/src/dbt --name dsiprouter-app  dsiprouter
+### Running the Application (Docker)
+Given docker compose and docker, you can build and execute the app from command line. This should work
+across platforms (yay Docker!)
+```bash
+docker-compose up
 ```
 
-### Access the Website Local
+### Running the Application (Native)
+If you prefer to run the application without docker, make sure to have python requirements installed along with
+all dependencies of the application outlined in [build/requirements.txt](build/requirements.txt)
+```shell script
+pip install --no-cache-dir -r build/requirements.txt
+python app.py
+```
 
+### Access the Website Locally
 - Open a Web Browser
 - Enter http://localhost
-
 
 ### Making Changes
 
@@ -45,7 +51,6 @@ The application is built using the Python Flask Architecture.  Here are couple o
 - templates: all of the HTML that makes up the site is there.  The main layout is in a file called layout.html.  All new pages should inherit from that pages
 - app.py:  the main Python script that handles the routing of requests
 - terraform: contains the terraform scripts to provision to DigitalOcean, which is where our servers exists
-
 
 ### Commit Changes
 
@@ -68,3 +73,9 @@ To be clear, pull requests on the master branch will not be accepted.  We only a
 Join the Detroit Black Tech #website_dev_team
 
 Have Fun - This is a great way to learn and contribute to the group.
+[Git]: https://git-scm.com/downloads
+[Docker]: https://docs.docker.com/
+[Docker Compose]: https://docs.docker.com/compose/overview/
+[Python]: https://www.python.org/
+[1]: https://docs.docker.com/docker-for-mac/install/
+[2]: https://docs.docker.com/docker-for-windows/install/
