@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div class="row">
+  <div class="col-md-4 offset-md-4">
+    <div class="card">
+      <div class="card-header">
+        Add steps to your Process
+      </div>
+
+      <div class="card-body">
+        <h4 class="card-title">Step number: {{step_num}}</h4>
+
+        <form method="POST" enctype=multipart/form-data>
+          <!-- pass data variables -->
+          <input type="hidden" name=user_id value={{user_id}}>
+          <input type="hidden" name=process_id value={{process_id}}>
+          <input type="hidden" name=step_num value={{step_num}}>
+
+          <!-- default to adding another step when pressing enter -->
+          <input type="submit" formaction="/add_step" style="visibility: hidden; display: none;">
+
+          <!-- inputs for the step -->
+          <div class="form-group">
+            <label for="exampleInputTitle1">Title</label>
+            <input type="text" class="form-control" name="title" id="title" placeholder="Enter the title for this step">
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Description</label>
+            <textarea class="form-control" name="description" id="description" rows="3" placeholder="Enter the description for this step"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlFile1">Image</label>
+            <input type="file" name="file" class="form-control-file" id="file">
+          </div>
+
+          <!-- navigation options -->
+          <div class="row">
+            <div class="col-md-6">
+              <button class="btn btn-primary" formaction="/show_flo">See my ProFlo</button>
+            </div>
+            <div class="col-md-6">
+              <button class="btn btn-primary" formaction="/add_step">Enter another step</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+{% endblock %}

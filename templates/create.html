@@ -1,0 +1,49 @@
+{%extends "console_layout.html" %}
+{% block body %}
+<div class="heading">
+	<h1>Create dSIPRouter Instance</h1>
+</div>
+<div class="form-group options">
+	<div class="option">
+		<div class="option_title">
+			<h3>Choose version of dSIPRouter</h3>
+	        </div>
+		<div class="option_selections">
+			<label class="radio-inline option_selection">
+				<input type="radio" name="version" checked>v0.51 (Production)
+			</label>
+			<label class="radio-inline option_selection">
+				<input type="radio" name="version">v0.52 (Development)
+			</label>
+		</div>
+	</div>
+	<div class="option">
+		<div class="option_title">
+			<h3>Select Cloud Provider</h3>
+	        </div>
+		<div class="option_selections">
+			<label class="radio-inline option_selection">
+				<input type="radio" name="provider" checked>Digital Ocean
+			</label>
+			<label class="radio-inline option_selection">
+				<input type="radio" name="provider" disabled>AWS
+			</label>
+			<label class="radio-inline option_selection">
+				<input type="radio" name="provider" disabled>Google Cloud
+			</label>
+		</div>
+	</div>
+	<div class="option">
+		<div class="option_title">
+			<h3>Enable RTPEngine</h3>
+	        </div>
+		<div class="option_selections">
+			<button class="btn btn-primary" type="button" value="Enable RTPEngine">Enable RTPEngine</button>
+		</div>
+	</div>
+	<div>
+		<br>
+		<button type="submit" class="btn btn-success" style="width: 100%;">Create Instance</button>
+	</div>   
+</div>
+{% endblock %}
