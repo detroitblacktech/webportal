@@ -33,7 +33,7 @@ resource "digitalocean_droplet" "webserver" {
           "sudo add-apt-repository \"deb [arch=amd64] https://download.docker.com/linux/debian$(lsb_release -cs) stable\"",
           "sudo apt-get update",
           "sudo apt-get install docker-ce docker-ce-cli containerd.io",
-          "git clone ${var.repo}",
+          "git clone ${var.repo} -b ${var.branch}",
           "cd webportal",
           "./deploy.sh docker",
           "sleep 20"
