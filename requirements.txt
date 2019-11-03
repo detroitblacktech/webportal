@@ -1,1 +1,3 @@
-build/requirements.txt
+--index-url https://pypi.python.org/simple/
+# The line below picks up dependencies described in setup.py install_requires
+-e .
