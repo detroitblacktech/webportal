@@ -1,7 +1,3 @@
-output "kamailio-server-ssh" {
-  value = "${digitalocean_droplet.kamailio-server.*.ipv4_address}"
-}
-
-output "fusionpbx-server-ssh" {
-  value = "${digitalocean_droplet.fusionpbx.*.ipv4_address}"
+output "ip" {
+  value = "${digitalocean_droplet.webserver.*.ipv4_address}"
 }
