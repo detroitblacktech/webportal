@@ -23,5 +23,5 @@ variable "repo" {
 }
 
 variable "branch" {
-        default="dev"
+        default="staging"
 }
