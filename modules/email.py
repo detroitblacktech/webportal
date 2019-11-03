@@ -1,4 +1,5 @@
 import os, sys, settings
+#TODO: async conflicts with reserved word in python 3.7
 from util.decorator import async
 import smtplib
 from email import encoders
