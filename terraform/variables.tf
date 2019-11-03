@@ -1,34 +1,27 @@
 variable "do_token" {
+
 }
 
 variable "prefix" {
-	default =""
+
 }
 
 variable "pvt_key" {
-  default = "~/.ssh/dopensource-training"
+  default = "~/.ssh/dbt_dev"
 }
 
 variable "dropletname" {
-  default = "kamailio-server"
-}
-
-variable "fusionpbx-dropletname" {
-  default = "fusionpbx"
+  default = "webserver"
 }
 
 variable "number_of_servers" {
   default = "1"
 }
 
-variable "domainname" {
-  default = "dopensource.net"
-}
-
 variable "repo" {
-	default="https://github.com/detroitblacktech/webportal.git"
+        default="https://github.com/detroitblacktech/webportal.git"
 }
 
 variable "branch" {
-	default="dev"
+        default="dev"
 }
