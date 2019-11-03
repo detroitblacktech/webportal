@@ -3,7 +3,7 @@ variable "do_token" {
 }
 
 variable "prefix" {
-
+	default=""
 }
 
 variable "pvt_key" {
