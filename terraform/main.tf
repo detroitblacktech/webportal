@@ -28,6 +28,7 @@ resource "digitalocean_droplet" "webserver" {
           "export PATH=$PATH:/usr/bin",
           # install git repo and and server up the index page
           "sudo apt-get update",
+          "sleep 20",
           "sudo apt-get install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common git",
           "curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -",
 	  "sleep 20",
