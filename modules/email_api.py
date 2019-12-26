@@ -1,5 +1,5 @@
 import os, sys, settings
-from util.decorator import async
+#from util.decorator import async
 import smtplib
 from email import encoders
 from email.mime.base import MIMEBase
@@ -14,7 +14,7 @@ def print_debug(e):
     print(exc_type, fname, exc_tb.tb_lineno)
 
 # abstraction of email and sms functions
-@async
+#@async
 def send_async_email(recipients, sender, msg_root):
     ''' sends mail asynchronously '''
     with smtplib.SMTP('smtp.gmail.com', 587) as server:

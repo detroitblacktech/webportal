@@ -11,16 +11,16 @@ fi
 
 case "$1" in
 	"native" | "")
-	python3.5 app.py
+	python3 app.py
 	;;
 	"docker")
-	docker build -t dsiprouter .
+	docker build -t dbtwebportal .
 	
 	if [ "$2" != "dev" ]; then
 		sleep 30
 	fi
 	
-	docker rm -f dsiprouter-app
-	docker run -p 80:80 -dit --restart always $volumemount --name dsiprouter-app  dsiprouter
+	docker rm -f dbtwebportal-app
+	docker run -p 80:80 -dit --restart always $volumemount --name dbtwebportal-app  dbtwebportal
 	;;	
 esac

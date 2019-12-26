@@ -22,4 +22,7 @@ MAIL_USERNAME='welovecustomers@acm360.com'
 MAIL_PASSWORD='flyball2011'
 MAIL_ASCII_ATTACHMENTS=False
 MAIL_DEFAULT_SENDER='welovecustomers@acm360.com'
-MAIL_DEFAULT_SUBJECT="dSIPRouter System Response"
+MAIL_DEFAULT_SUBJECT="[Detroit Black Tech] Contact Form"
+
+# slack API key
+SLACK_API_KEY=""

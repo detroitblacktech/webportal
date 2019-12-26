@@ -1,4 +1,5 @@
 <!DOCTYPE HTML>
+{% from 'util.jinja2.html' import link_tag, script_tag, tracked_link, img_tag %}
 <!--
 	Justice by freehtml5.co
 	Twitter: http://twitter.com/fh5co
@@ -70,8 +71,9 @@
 					<ul>
 						<li class="active"><a href="#" data-nav-section="home">Home</a></li>
 						<li><a href="#" data-nav-section="about">About</a></li>
-            <li><a href="#" data-nav-section="practice-areas">Members</a></li>
+            <li><a href="#" data-nav-section="practice-areas">Initiatives</a></li>
 						<li><a href="#" data-nav-section="practice-areas">Events</a></li>
+						<li><a href="#">Developer Conference</a></li>
 						<li><a href="#" data-nav-section="our-team">Our Team</a></li>
 						<li class="btn-cta"><a href="#" data-nav-section="contact"><span>Contact</span></a></li>
 						<!-- For external page link -->
@@ -91,7 +93,7 @@
 					<div class="display-t">
 						<div class="display-tc">
 							<h1 class="animate-box" data-animate-effect="fadeIn">Promoting Detroit Black Tech Talent</h1>
-							<p class="gtco-video-link animate-box" data-animate-effect="fadeIn"><a href="https://vimeo.com/channels/staffpicks/93951774" class="popup-vimeo"><i class="icon-controller-play"></i></a></p>
+							<p class="gtco-video-link animate-box" data-animate-effect="fadeIn"><a href="https://vimeo.com/381541025" class="popup-vimeo"><i class="icon-controller-play"></i></a></p>
 						</div>
 					</div>
 				</div>
@@ -104,19 +106,24 @@
 			<div class="row row-pb-md">
 				<div class="col-md-8 col-md-offset-2 heading animate-box" data-animate-effect="fadeIn">
 					<h1>Welcome To Detroit Black Tech</h1>
-					<p class="sub">Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+					<p class="sub">Focused on building a community of Black individuals in the Detroit Tech Community that are highly valued.</p>
 					<p class="subtle-text animate-box" data-animate-effect="fadeIn">Welcome</p>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-6 col-md-pull-1 animate-box" data-animate-effect="fadeInLeft">
 					<div class="img-shadow">
-						<img src="images/img_1.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
+						<img src="static/images/dbt_principles.png" class="img-responsive" alt="Core Principles">
 					</div>
 				</div>
 				<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-					<h2 class="heading-colored">Excellence &amp; Honesty</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aut praesentium nihil hic quam culpa magnam ducimus suscipit repellat quidem cumque, unde impedit, labore earum eligendi perspiciatis nemo molestiae sequi veritatis. Veritatis, reprehenderit, eaque! Rerum, libero ipsam enim, iusto adipisci quae repellendus officia consequatur ducimus cupiditate impedit, aliquam numquam excepturi.</p>
+					<h2 class="heading-colored">Core Principles</h2>
+					<p>In order for this group to grow we had to establish some core principles.
+						Trust is the foundation of our principles because without trust we can't truely be ourselves, which
+						is the core reason we started this group...we want this group to be a safe place where ideas and
+						questions can be discussed without judgement.
+
+					</p>
 					<p><a href="#" class="read-more">Read more <i class="icon-chevron-right"></i></a></p>
 				</div>
 			</div>
@@ -127,76 +134,37 @@
 		<div class="container">
 			<div class="row row-pb-md">
 				<div class="col-md-8 col-md-offset-2 heading animate-box" data-animate-effect="fadeIn">
-					<h1>Practice Areas</h1>
-					<p class="sub">Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-					<p class="subtle-text animate-box" data-animate-effect="fadeIn">Practice <span>Areas</span></p>
+					<h1>Initiatives</h1>
+					<p class="sub">We are focused on initatives that will support the growth of our community and inspire others to start or advance their technology journey</p>
+					<p class="subtle-text animate-box" data-animate-effect="fadeIn">Initiatives</p>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-6">
 					<div class="gtco-practice-area-item animate-box">
 						<div class="gtco-icon">
-							<img src="images/scale.png" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
+							<img src="static/images/hwth_thumbnail.png" alt="Hacking With The Homies">
 						</div>
 						<div class="gtco-copy">
-							<h3>Criminal Law</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed scelerisque sapien. Sed sodales, libero non faucibus rutrum, purus tellus finibus diam, eget ornare tortor leo eget erat. </p>
+							<h3>Hacking With The Homies</h3>
+							<p>Hacking with the Homies is an inclusive coworking space for anyone in the tech community in the Metro Detroit area.
+								 Work on projects, debug code and network with successful tech professionals across all disciplines in technology.</p>
+								 <p><a href="#" class="read-more">Read more <i class="icon-chevron-right"></i></a></p>
 						</div>
 					</div>
-
-					<div class="gtco-practice-area-item animate-box">
-						<div class="gtco-icon">
-							<img src="images/scale.png" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
-						</div>
-						<div class="gtco-copy">
-							<h3>Industrial Law</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed scelerisque sapien. Sed sodales, libero non faucibus rutrum, purus tellus finibus diam, eget ornare tortor leo eget erat. </p>
-						</div>
-					</div>
-
-					<div class="gtco-practice-area-item animate-box">
-						<div class="gtco-icon">
-							<img src="images/scale.png" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
-						</div>
-						<div class="gtco-copy">
-							<h3>Financial Law</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed scelerisque sapien. Sed sodales, libero non faucibus rutrum, purus tellus finibus diam, eget ornare tortor leo eget erat. </p>
-						</div>
-					</div>
-
 				</div>
 				<div class="col-md-6">
 
 					<div class="gtco-practice-area-item animate-box">
 						<div class="gtco-icon">
-							<img src="images/scale.png" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
+							<img src="static/images/dbt_podcast_thumbnail.png" alt="Podcast Series">
 						</div>
 						<div class="gtco-copy">
-							<h3>Divorce Law</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed scelerisque sapien. Sed sodales, libero non faucibus rutrum, purus tellus finibus diam, eget ornare tortor leo eget erat. </p>
+							<h3>Member Podcast Series</h3>
+							<p>This initiative provides insight into the journey of Detroit Black Tech Community.  Listening to their stories will give you motivation
+							and potentially give you some tips or tricks that will help navigate your journey.</p>
 						</div>
 					</div>
-
-					<div class="gtco-practice-area-item animate-box">
-						<div class="gtco-icon">
-							<img src="images/scale.png" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
-						</div>
-						<div class="gtco-copy">
-							<h3>Corporate Law</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed scelerisque sapien. Sed sodales, libero non faucibus rutrum, purus tellus finibus diam, eget ornare tortor leo eget erat. </p>
-						</div>
-					</div>
-
-					<div class="gtco-practice-area-item animate-box">
-						<div class="gtco-icon">
-							<img src="images/scale.png" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
-						</div>
-						<div class="gtco-copy">
-							<h3>Accident Law</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed scelerisque sapien. Sed sodales, libero non faucibus rutrum, purus tellus finibus diam, eget ornare tortor leo eget erat. </p>
-						</div>
-					</div>
-
 				</div>
 			</div>
 		</div>
@@ -207,33 +175,45 @@
 			<div class="row row-pb-md">
 				<div class="col-md-8 col-md-offset-2 heading animate-box" data-animate-effect="fadeIn">
 					<h1>Our Team</h1>
-					<p class="sub">Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+					<p class="sub">The founding members of the community is Mack Hendricks, Jeseekia Vaughn and Aubrey Agee.  However, the members that provide heavy influence
+					is  Nikki Evelyn, Renee Hudson and Edward Carrington</p>
 					<p class="subtle-text animate-box" data-animate-effect="fadeIn">Our Team</p>
 				</div>
 			</div>
 			<div class="row team-item gtco-team-reverse">
 				<div class="col-md-6 col-md-push-7 animate-box" data-animate-effect="fadeInRight">
 					<div class="img-shadow">
-						<img src="images/img_team_1.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
+						<img src="static/images/mack_hendricks.jpg" class="img-responsive" alt="Mack Hendricks picture">
 					</div>
 				</div>
 				<div class="col-md-6  col-md-pull-6 animate-box" data-animate-effect="fadeInRight">
-					<h2>Jeff Finley</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus aliquid maiores, voluptatum ex. Accusantium, eum distinctio laudantium. Perferendis dolor, corporis quasi? Tempore quod molestiae quis cumque pariatur dolore vel sit, fugit delectus quasi reprehenderit officia voluptate incidunt, culpa odit impedit qui dolorum fugiat. Quidem possimus reprehenderit, quae recusandae voluptatibus magnam!</p>
-					<p>Ratione facilis quod laborum eaque illo dolore blanditiis nobis dicta voluptatem fugit optio, eveniet non dolor quia delectus, sint, dignissimos atque porro consequuntur unde. Soluta ex necessitatibus delectus saepe aliquam, culpa officiis doloremque, ipsa facere hic, voluptatem accusantium veniam, quasi! Explicabo accusantium sint, corporis consequuntur fugit ipsam, dolorum excepturi adipisci.</p>
+					<h2>Mack Hendricks</h2>
+					<p>Mack obtained a Bachelor and Masters of Science in Computer Science from Oakland University. He has worked for large Silicon Valley-based companies for most of his 20-year career, including 5 years at Sun Microsystems and 10 years at Oracle Corporation. In parallel, Mack has built companies in the restaurant and technology sector. One primary principle driving Mack is setting up a framework that allows generational wealth to grow and be passed down to his kids, grandkids, great grandkids and so on.</p>
 				</div>
 			</div>
 
 			<div class="row team-item gtco-team">
 				<div class="col-md-6 col-md-pull-1 animate-box"  data-animate-effect="fadeInLeft">
 					<div class="img-shadow">
-						<img src="images/img_team_2.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
+						<img src="http://www.trainx.ai/wp-content/uploads/2018/01/jeseekia-e1518128156681.jpg" class="img-responsive" alt="Jeseekia Vaughn picture">
 					</div>
 				</div>
 				<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-					<h2>Craig Campbell</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus aliquid maiores, voluptatum ex. Accusantium, eum distinctio laudantium. Perferendis dolor, corporis quasi? Tempore quod molestiae quis cumque pariatur dolore vel sit, fugit delectus quasi reprehenderit officia voluptate incidunt, culpa odit impedit qui dolorum fugiat. Quidem possimus reprehenderit, quae recusandae voluptatibus magnam!</p>
-					<p>Ratione facilis quod laborum eaque illo dolore blanditiis nobis dicta voluptatem fugit optio, eveniet non dolor quia delectus, sint, dignissimos atque porro consequuntur unde. Soluta ex necessitatibus delectus saepe aliquam, culpa officiis doloremque, ipsa facere hic, voluptatem accusantium veniam, quasi! Explicabo accusantium sint, corporis consequuntur fugit ipsam, dolorum excepturi adipisci.</p>
+					<h2>Jeseekia Vaughn</h2>
+					<p>Jeseekia is a Software Engineer, primarily focused on full stack web application development. Through her company Fully Developed, LLC she services clients using various languages including HTML, CSS, JavaScript, Python, PHP, and SQL. She is an avid learner, currently training in Artificial Intelligence Engineering. Jeseekia is passionate about exposing others to engineering and development through teaching and mentoring.</p>
+				</div>
+			</div>
+
+			<div class="row team-item gtco-team">
+				<div class="col-md-6 col-md-push-7 animate-box"  data-animate-effect="fadeInRight">
+					<div class="img-shadow">
+						<img src="static/images/aubrey_agee.jpg" class="img-responsive" alt="Aubrey Agee picture">
+					</div>
+				</div>
+				<div class="col-md-6 col-md-pull-6 animate-box" data-animate-effect="fadeInRight">
+					<h2>Aubrey Agee</h2>
+					<p>Aubrey has spent 13 years in the tech entrepreneurial space by launching tech ventures, organizing tech training and creating hackathons.  As the Director of Innovation Warriors at Wayne State University he has reached over 4,000 participants in their exploration of entrepreneurship. Aubrey has guided 800 individuals to generate their own business models and helped over 200 businesses launch. Over 100 ventures are generating revenue within the seven years of Aubrey’s leadership over the Innovation Warriors.
+</p>
 				</div>
 			</div>
 
@@ -245,20 +225,29 @@
 			<div class="row row-pb-md">
 				<div class="col-md-8 col-md-offset-2 heading animate-box" data-animate-effect="fadeIn">
 					<h1>Contact Us</h1>
-					<p class="sub">Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+					<p class="sub">We are constantly looking to grow our community and looking to partner with organizations that believe in our mission</p>
 					<p class="subtle-text animate-box" data-animate-effect="fadeIn">Contact</p>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-6 col-md-push-6 animate-box">
-					<form action="#">
+					<form id="contact-form" action="#">
 						<div class="form-group">
 							<label for="name" class="sr-only">Name</label>
 							<input type="text" class="form-control" placeholder="Name" id="name">
 						</div>
 						<div class="form-group">
+							<label for="email" class="sr-only">Purpose</label>
+							<select class="form-control" id="purpose">
+							<option>Select Purpose for Contacting Us</option>
+					    <option>Want to Sponsor Us</option>
+					    <option>Want to Join</option>
+					    <option>Want General Info</option>
+					  </select>
+						</div>
+						<div class="form-group">
 							<label for="email" class="sr-only">Email</label>
-							<input type="text" class="form-control" placeholder="Email" id="email">
+							<input type="email" class="form-control" placeholder="Email" id="email">
 						</div>
 						<div class="form-group">
 							<label for="message" class="sr-only">Message</label>
@@ -272,10 +261,10 @@
 				<div class="col-md-4 col-md-pull-6 animate-box">
 					<div class="gtco-contact-info">
 						<ul>
-							<li class="address">198 West 21th Street, Suite 721 New York NY 10016</li>
-							<li class="phone"><a href="tel://1235235598">+ 1235 2355 98</a></li>
-							<li class="email"><a href="mailto:info@yoursite.com">info@example.com</a></li>
-							<li class="url"><a href="#">http://example.com</a></li>
+							<li class="address">4160 Cass Ave, Suite B. Detroit, MI 48201</li>
+							<li class="phone"><a href="tel://13137891310">+1 313-789-1310</a></li>
+							<li class="email"><a href="mailto:info@detroitblacktech.com">info@detroitblacktech.com</a></li>
+							<li class="url"><a href="#">http://detroitblacktech.org</a></li>
 						</ul>
 					</div>
 				</div>
@@ -289,15 +278,15 @@
 			<div class="row copyright">
 				<div class="col-md-12">
 					<p class="pull-left">
-						<small class="block">&copy; 2016 Free HTML5. All Rights Reserved.</small>
-						<small class="block">Designed by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a> Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a></small>
+						<small class="block">&copy; 2019-2020 Detroit Black Tech. All Rights Reserved.</small>
+						<small class="block">Designed by Detroit Black Tech</small>
 					</p>
 					<p class="pull-right">
 						<ul class="gtco-social-icons pull-right">
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-linkedin"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
+							<li><a href="https://twitter.com/detroitintech"><i class="icon-twitter"></i></a></li>
+							<li><a href="https://www.facebook.com/detroitblacktech/"><i class="icon-facebook"></i></a></li>
+							<!--<li><a href=""><i class="icon-linkedin"></i></a></li>-->
+							<!--<li><a href="#"><i class="icon-dribbble"></i></a></li>-->
 						</ul>
 					</p>
 				</div>
@@ -326,6 +315,8 @@
 	<script src="static/js/magnific-popup-options.js"></script>
 	<!-- Main -->
 	<script src="static/js/main.js"></script>
+	{% block frontend_js %}
+	{% endblock %}
 
 	</body>
 </html>
