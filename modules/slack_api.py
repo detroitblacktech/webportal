@@ -3,7 +3,7 @@ import slack
 
 def send_slack(message,channel="random"):
 
-    client = slack.WebClient(token='xoxb-444188207472-653229662789-02HESGqEirCu4ixPORfR290x')
+    client = slack.WebClient(token=settings.SLACK_API_TOKEN)
 
     response = client.chat_postMessage(
       	channel=channel,
