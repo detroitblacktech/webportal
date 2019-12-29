@@ -35,6 +35,11 @@ def init_app():
 def index():
     return render_template('index.html')
 
+@app.route('/conference')
+def hwthdc():
+    return render_template('hwthdc.html')
+
+
 @app.route('/email', methods=['POST'])
 def email():
     # send an email
@@ -50,6 +55,9 @@ def email():
             print(key,value)
 
         send_email(recipients=recipients, text_body=text_body, data=data)
+        #Send slack message to leads channel
+        message = "New Web Contact Lead:\nName: {}\nEmail: {}\nPurpose: {}\nMessage: {}".format(data['name'],data['email'],data['purpose'],data['message'])
+        send_slack(message,"webleads")
 
         return jsonify(
             status=200,

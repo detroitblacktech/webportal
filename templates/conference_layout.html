@@ -1,17 +1,12 @@
 <!DOCTYPE HTML>
 {% from 'util.jinja2.html' import link_tag, script_tag, tracked_link, img_tag %}
-<!--
-	Justice by freehtml5.co
-	Twitter: http://twitter.com/fh5co
-	URL: http://freehtml5.co
--->
 <html>
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>DBT: Detroit Black Tech</title>
+	<title>DBT: Hacking With The Homies Developer Conference</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Focused on building a community of Black individuals in the Detroit Tech Community that are highly valued" />
+	<meta name="description" content="This is the first Software Developer Conference with a 100% focus on Black and Brown software developers and it's popping off in Detroit." />
 	<meta name="keywords" content="detroit, black, developers, designers, project managers, devops" />
 	<meta name="author" content="Detroit Black Tech" />
 
@@ -69,13 +64,14 @@
 				</div>
 				<div class="col-xs-10 text-right menu-1 main-nav">
 					<ul>
-						<li class="active"><a href="#" data-nav-section="home">Home</a></li>
-						<li><a href="#" data-nav-section="about">About</a></li>
-            <li><a href="#" data-nav-section="practice-areas">Initiatives</a></li>
-						<li><a href="#" data-nav-section="practice-areas">Events</a></li>
-						<li><a href="/conference" class="external">Conference</a></li>
-						<li><a href="#" data-nav-section="our-team">Our Team</a></li>
-						<li class="btn-cta"><a href="#" data-nav-section="contact"><span>Contact</span></a></li>
+						<li><a href="/" class="external">Home</a></li>
+						<li><a href="/#about" class="external">About</a></li>
+            <li><a href="/#initiatives" class="external">Initiatives</a></li>
+						<li><a href="/#initiatives" class="external">Events</a></li>
+						<li class="active"><a href="#" data-nav-section="conference-home">Conference</a></li>
+						<li><a href="#"  data-nav-section="our-team">Our Team</a></li>
+							<li><a href="#" data-nav-section="contact">Contact Us</a></li>
+						<li class="btn-cta"><a href="https://www.eventbrite.com/e/hacking-with-the-homies-developers-conference-tickets-83203845943" target="_blank" class="external"><span>Buy Tickets</span></a></li>
 						<!-- For external page link -->
 						<!-- <li><a href="http://freehtml5.co/" class="external">External</a></li> -->
 					</ul>
@@ -85,15 +81,16 @@
 		</div>
 	</nav>
 
-	<section id="gtco-hero" class="gtco-cover" style="background-image: url('static/images/dbt_2019.jpg')"  data-section="home"  data-stellar-background-ratio="0.5">
+	<section id="gtco-hero" class="gtco-cover" style="background-image: url('static/images/hwthdc_main.jpg')"  data-section="conference-home"  data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 col-md-offset-0 text-center">
 					<div class="display-t">
 						<div class="display-tc">
-							<h1 class="animate-box" data-animate-effect="fadeIn">Promoting Detroit Black Tech Talent</h1>
-							<p class="gtco-video-link animate-box" data-animate-effect="fadeIn"><a href="https://vimeo.com/381541025" class="popup-vimeo"><i class="icon-controller-play"></i></a></p>
+							<h1 class="animate-box" data-animate-effect="fadeIn">Hacking With The Homies Developer Conference</h1>
+							<h2>Detroit, MI - Saturday, Feburary 29, 2020</h2>
+							<!--<p class="gtco-video-link animate-box" data-animate-effect="fadeIn"><a href="https://vimeo.com/381541025" class="popup-vimeo"><i class="icon-controller-play"></i></a></p> -->
 						</div>
 					</div>
 				</div>
@@ -101,30 +98,13 @@
 		</div>
 	</section>
 
-	<section id="gtco-about" data-section="about">
+	<section id="gtco-about" data-section="conference-about">
 		<div class="container">
-			<div class="row row-pb-md">
-				<div class="col-md-8 col-md-offset-2 heading animate-box" data-animate-effect="fadeIn">
-					<h1>Welcome To Detroit Black Tech</h1>
-					<p class="sub">Focused on building a community of Black individuals in the Detroit Tech Community that are highly valued.</p>
-					<p class="subtle-text animate-box" data-animate-effect="fadeIn">Welcome</p>
-				</div>
-			</div>
 			<div class="row">
-				<div class="col-md-6 col-md-pull-1 animate-box" data-animate-effect="fadeInLeft">
-					<div class="img-shadow">
-						<img src="static/images/dbt_principles.png" class="img-responsive" alt="Core Principles">
-					</div>
-				</div>
-				<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-					<h2 class="heading-colored">Core Principles</h2>
-					<p>In order for this group to grow we had to establish some core principles.
-						Trust is the foundation of our principles because without trust we can't truely be ourselves, which
-						is the core reason we started this group...we want this group to be a safe place where ideas and
-						questions can be discussed without judgement.
-
-					</p>
-					<p><a href="#" class="read-more">Read more <i class="icon-chevron-right"></i></a></p>
+				<div class="col-md-8 col-md-offset-2 heading animate-box" data-animate-effect="fadeIn">
+					<h1>Designed For Us</h1>
+					<p class="sub">This is the first Software Developer Conference with a 100% focus on Black and Brown software developers and it's popping off in Detroit.
+					This conference is an extension to the bi-weekly events that we have throughout the year.</p>
 				</div>
 			</div>
 		</div>
@@ -134,22 +114,115 @@
 		<div class="container">
 			<div class="row row-pb-md">
 				<div class="col-md-8 col-md-offset-2 heading animate-box" data-animate-effect="fadeIn">
-					<h1>Initiatives</h1>
-					<p class="sub">We are focused on initatives that will support the growth of our community and inspire others to start or advance their technology journey</p>
-					<p class="subtle-text animate-box" data-animate-effect="fadeIn">Initiatives</p>
+					<h1>Event Agenda</h1>
+					<p class="sub">The event is from 9am-5pm with registration starting at 8:30am.  Lunch is provided.  A networking event will be held immediately after from 5:15pm-8pm</p>
+					<!--<p class="subtle-text animate-box" data-animate-effect="fadeIn">Initiatives</p> -->
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-6">
 					<div class="gtco-practice-area-item animate-box">
 						<div class="gtco-icon">
-							<img src="static/images/hwth_thumbnail.png" alt="Hacking With The Homies">
+							<img src="static/images/dbt_podcast_thumbnail.png" alt="Hacking With The Homies">
+							9:00am
 						</div>
 						<div class="gtco-copy">
-							<h3>Hacking With The Homies</h3>
-							<p>Hacking with the Homies is an inclusive coworking space for anyone in the tech community in the Metro Detroit area.
-								 Work on projects, debug code and network with successful tech professionals across all disciplines in technology.</p>
-								 <!--<p><a href="#" class="read-more">Read more <i class="icon-chevron-right"></i></a></p> -->
+							<h3>Welcome & Keynote</h3>
+							<p>Welcome and inspirational message</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="gtco-practice-area-item animate-box">
+						<div class="gtco-icon">
+							<img src="static/images/dbt_podcast_thumbnail.png" alt="Hacking With The Homies">
+							9:15am
+						</div>
+						<div class="gtco-copy">
+							<h3>Working with GoLang (aka GO)</h3>
+							<p>Will explain why large companies in Metro Detroit are moving to GO.  Therefore, there is high demand (which translates to higher saleries). You will write a simple GO application that shows the value of the language</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+
+					<div class="gtco-practice-area-item animate-box">
+						<div class="gtco-icon">
+							<img src="static/images/brianna_mccullough.jpg" alt="Podcast Series" height="100" width="100">
+							10am
+						</div>
+						<div class="gtco-copy">
+							<h3>DevOps - Where Infrastructure and Coding Meets </h3>
+							<h4>Speaker: Brianna Mccullough &nbsp<a href="https://twitter.com/brilimitless" target="_blank"><i class="icon-twitter"></i></a></h4>
+							<p>We will discuss how DevOp’s is the perfect way to transition into coding.  The presenter will discuss her journey from being a traditional Network Engineer into joining the DevOp’s automation team.
+								She will introduce Ansible and demonstrate how it’s used to automate the deployment of applications</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="gtco-practice-area-item animate-box">
+						<div class="gtco-icon">
+							<img src="static/images/dbt_podcast_thumbnail.png" alt="Hacking With The Homies">
+							11am
+						</div>
+						<div class="gtco-copy">
+							<h3>Blockchain Development using Solidity</h3>
+							<p>Blockchain development may look intimidating, but it’s really not.
+								We will explain why more black and brown folks need to jump in this space and
+								we will write a simple application that will store data in the blockchain and
+								use another computer to access the data from the blockchain.
+								Hence, demonstrating the distributed capability of Blockchain technology</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+
+					<div class="gtco-practice-area-item animate-box">
+						<div class="gtco-icon">
+							<img src="static/images/dbt_podcast_thumbnail.png" alt="Hacking With The Homies">
+							1pm
+						</div>
+						<div class="gtco-copy">
+							<h3>AI - Crawl, Walk, Run</h3>
+							<!-- h4>Speaker: Brianna Mccullough &nbsp<a href="https://twitter.com/brilimitless"><i class="icon-twitter"></i></a></h4> -->
+							<p>AI is complicated, but it’s the future.  So, in this session, we will walk through a coding example that uses AI to predict when the mail carrier will arrive.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="gtco-practice-area-item animate-box">
+						<div class="gtco-icon">
+							<img src="static/images/angie_jones.jpg" height="100" alt="Hacking With The Homies">
+							2pm
+						</div>
+						<div class="gtco-copy">
+							<h3>Application Testing</h3>
+							<h4>Speaker: Angie Jones &nbsp<a href="https://twitter.com/techgirl1908" target="_blank" class="icon-twitter"></i></a></h4>
+							<p>Testing an application is one of the most challenging areas of
+								 software development because validation tests needs to be constantly
+								 updated to ensure new application functionality being developed can be
+								 properly tested before being released to users.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+
+					<div class="gtco-practice-area-item animate-box">
+						<div class="gtco-icon">
+							<img src="static/images/ofiliojo_ichaba.jpg" height="100" alt="Hacking With The Homies">
+							3pm
+						</div>
+						<div class="gtco-copy">
+							<h3>Kubernetes - Setting up your first cluster and deploying an app</h3>
+							<h4>Speaker: Ofiliojo Ichaba &nbsp<a href="https://www.linkedin.com/in/ofiliojo/" target="_blank" class="icon-linkedin"></i></a></h4>
+							<p>We will setup a cluster and deploy an app to the cluster.  We will discuss the benefits of deploying your application in Kubernetes</p>
 						</div>
 					</div>
 				</div>
@@ -157,12 +230,13 @@
 
 					<div class="gtco-practice-area-item animate-box">
 						<div class="gtco-icon">
-							<img src="static/images/dbt_podcast_thumbnail.png" alt="Podcast Series">
+							<img src="static/images/xavier_johnson.jpg" height="100" alt="Hacking With The Homies">
+							4pm
 						</div>
 						<div class="gtco-copy">
-							<h3>Member Podcast Series</h3>
-							<p>This initiative provides insight into the journey of Detroit Black Tech Community.  Listening to their stories will give you motivation
-							and potentially give you some tips or tricks that will help navigate your journey.</p>
+							<h3>Security - Secure By Design</h3>
+							<h4>Speaker: Xavier Johnson &nbsp<a href="https://www.youtube.com/user/723Zay/featured"  target="_blank" class="icon-youtube"></i></a></h4>
+							<p>We will discuss how to architect an application with security in mind</p>
 						</div>
 					</div>
 				</div>
@@ -230,6 +304,13 @@
 				</div>
 			</div>
 			<div class="row">
+				<div class="col-md-6 col-md-push-6 animate-box" id="contact-thankyou">
+	         <span id='close' onclick='$(this).parent().hide();$("#contact-form")[0].reset();$("#contact-form").fadeIn();'>x
+	        </span>
+	        <h2>Thanks...</h2>
+	        <small>We'll get back to you as quickly as possible</small>
+	      </div>
+
 				<div class="col-md-6 col-md-push-6 animate-box">
 					<form id="contact-form" action="#">
 						<div class="form-group">
@@ -240,8 +321,8 @@
 							<label for="email" class="sr-only">Purpose</label>
 							<select class="form-control" id="purpose">
 							<option>Select Purpose for Contacting Us</option>
-					    <option>Want to Sponsor Us</option>
-					    <option>Want to Join</option>
+					    <option>Want to Sponsor the Conference</option>
+							<option>Question about the Conference</option>
 					    <option>Want General Info</option>
 					  </select>
 						</div>

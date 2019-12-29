@@ -25,4 +25,4 @@ MAIL_DEFAULT_SENDER='welovecustomers@acm360.com'
 MAIL_DEFAULT_SUBJECT="[Detroit Black Tech] Contact Form"
 
 # slack API key
-SLACK_API_KEY=""
+SLACK_API_TOKEN=""

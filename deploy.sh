@@ -21,6 +21,6 @@ case "$1" in
 	fi
 	
 	docker rm -f dbtwebportal-app
-	docker run -p 80:80 -dit --restart always $volumemount --name dbtwebportal-app  dbtwebportal
+	docker run -p 80:80 -dit --restart always $volumemount --name dbtwebportal-app  -e SLACK_API_TOKEN=$SLACK_API_TOKEN dbtwebportal
 	;;	
 esac

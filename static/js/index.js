@@ -61,4 +61,5 @@
 
   $(document).ready(function() {
     setHandlers();
+    $('#contact-thankyou').fadeOut();
   });
