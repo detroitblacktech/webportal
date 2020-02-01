@@ -49,20 +49,8 @@ resource "digitalocean_droplet" "webserver" {
 
 
 resource "digitalocean_record" "A-staging" {
-  count = var.staging ? 1 : 0
   domain = "detroitblacktech.org"
   type = "A"
   name = "staging"
   value = "${digitalocean_droplet.webserver.ipv4_address}"
-}
-
-
-data "digitalocean_floating_ip" "dbt_prodution_ip" {
-  ip_address = var.production_public_ip
-}
-
-resource "digitalocean_floating_ip_assignment" "dbt_assignment" {
-  count = var.production ? 1 : 0
-  ip_address = digitalocean_floating_ip.dbt_production_ip.ip_address
-  droplet_id = digitalocean_droplet.webserver.id
 }
