@@ -1,0 +1,368 @@
+<!DOCTYPE HTML>
+{% from 'util.jinja2.html' import link_tag, script_tag, tracked_link, img_tag %}
+<!--
+	Justice by freehtml5.co
+	Twitter: http://twitter.com/fh5co
+	URL: http://freehtml5.co
+-->
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>DBT: Detroit Black Tech</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Focused on building a community of Black individuals in the Detroit Tech Community that are highly valued" />
+	<meta name="keywords" content="detroit, black, developers, designers, project managers, devops" />
+	<meta name="author" content="Detroit Black Tech" />
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156296463-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-156296463-1');
+</script>
+
+
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="{{url_for('static', filename='./css/animate.css')}}">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{{url_for('static', filename='./css/icomoon.css')}}">
+	<!-- Themify Icons-->
+	<link rel="stylesheet" href="{{url_for('static', filename='./css/themify-icons.css')}}">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="{{url_for('static', filename='./css/bootstrap.css')}}">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="{{url_for('static', filename='./css/magnific-popup.css')}}">
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="{{url_for('static', filename='./css/owl.carousel.min.css')}}">
+
+	<link rel="stylesheet" href="{{url_for('static', filename='./css/owl.theme.default.min.css')}}">
+	<!-- Flexslider -->
+	<link rel="stylesheet" href="{{url_for('static', filename='./css/flexslider.css')}}">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="{{url_for('static', filename='./css/style.css')}}">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+
+	<div class="gtco-loader"></div>
+
+	<div id="page">
+	<nav class="gtco-nav" role="navigation">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 col-xs-8">
+					<!--<div id="gtco-logo"><a href="index.html">Detroit Black Tech</a></div> -->
+				</div>
+				<div class="col-xs-10 text-right menu-1 main-nav">
+					<ul>
+						<li class="active"><a href="#" data-nav-section="home">Home</a></li>
+						<li><a href="#" data-nav-section="about">About</a></li>
+            <li><a href="#" data-nav-section="practice-areas">Initiatives</a></li>
+						<li><a href="#" data-nav-section="practice-areas">Events</a></li>
+						<li><a href="/conference" class="external">Conference</a></li>
+						<li><a href="#" data-nav-section="our-team">Our Team</a></li>
+						<li class="btn-cta"><a href="#" data-nav-section="contact"><span>Contact</span></a></li>
+						<!-- For external page link -->
+						<!-- <li><a href="http://freehtml5.co/" class="external">External</a></li> -->
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</nav>
+
+	<section id="gtco-hero" class="gtco-cover" style="background-image: url('static/images/dbt_2019.jpg')"  data-section="home"  data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-md-offset-0 text-center">
+					<div class="display-t">
+						<div class="display-tc">
+							<h1 class="animate-box" data-animate-effect="fadeIn">Promoting Detroit Black Tech Talent</h1>
+							<p class="gtco-video-link animate-box" data-animate-effect="fadeIn"><a href="https://vimeo.com/381541025" class="popup-vimeo"><i class="icon-controller-play"></i></a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="gtco-about" data-section="about">
+		<div class="container">
+			<div class="row row-pb-md">
+				<div class="col-md-8 col-md-offset-2 heading animate-box" data-animate-effect="fadeIn">
+					<h1>Welcome To Detroit Black Tech</h1>
+					<p class="sub">Focused on building a community of Black individuals in the Detroit Tech Community that are highly valued.</p>
+					<p class="subtle-text animate-box" data-animate-effect="fadeIn">Welcome</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-md-pull-1 animate-box" data-animate-effect="fadeInLeft">
+					<div class="img-shadow">
+						<img src="static/images/dbt_principles.png" class="img-responsive" alt="Core Principles">
+					</div>
+				</div>
+				<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+					<h2 class="heading-colored">Core Principles</h2>
+					<p>In order for this group to grow we had to establish some core principles.
+						Trust is the foundation of our principles because without trust we can't truely be ourselves, which
+						is the core reason we started this group...we want this group to be a safe place where ideas and
+						questions can be discussed without judgement.
+
+					</p>
+					<p><a href="#" class="read-more">Read more <i class="icon-chevron-right"></i></a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="gtco-practice-areas" data-section="practice-areas">
+		<div class="container">
+			<div class="row row-pb-md">
+				<div class="col-md-8 col-md-offset-2 heading animate-box" data-animate-effect="fadeIn">
+					<h1>Initiatives</h1>
+					<p class="sub">We are focused on initatives that will support the growth of our community and inspire others to start or advance their technology journey</p>
+					<p class="subtle-text animate-box" data-animate-effect="fadeIn">Initiatives</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="gtco-practice-area-item animate-box">
+						<div class="gtco-icon">
+							<img src="static/images/hwth_thumbnail.png" alt="Hacking With The Homies">
+						</div>
+						<div class="gtco-copy">
+							<h3>Hacking With The Homies</h3>
+							<p>Hacking with the Homies is an inclusive coworking space for anyone in the tech community in the Metro Detroit area.
+								 Work on projects, debug code and network with successful tech professionals across all disciplines in technology.</p>
+								 <!--<p><a href="#" class="read-more">Read more <i class="icon-chevron-right"></i></a></p> -->
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+
+					<div class="gtco-practice-area-item animate-box">
+						<div class="gtco-icon">
+							<img src="static/images/dbt_podcast_thumbnail.png" alt="Podcast Series">
+						</div>
+						<div class="gtco-copy">
+							<h3>Member Podcast Series</h3>
+							<p>This initiative provides insight into the journey of Detroit Black Tech Community.  Listening to their stories will give you motivation
+							and potentially give you some tips or tricks that will help navigate your journey.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="gtco-our-team" data-section="our-team">
+		<div class="container">
+			<div class="row row-pb-md">
+				<div class="col-md-8 col-md-offset-2 heading animate-box" data-animate-effect="fadeIn">
+					<h1>Our Team</h1>
+					<p class="sub">The founding members of the community is Mack Hendricks, Jeseekia Vaughn and Aubrey Agee.  However, the members that provide heavy influence
+					is  Nikki Evelyn, Renee Hudson and Edward Carrington</p>
+					<p class="subtle-text animate-box" data-animate-effect="fadeIn">Our Team</p>
+				</div>
+			</div>
+			<div class="row team-item gtco-team-reverse">
+				<div class="col-md-6 col-md-push-7 animate-box" data-animate-effect="fadeInRight">
+					<div class="img-shadow">
+						<img src="static/images/mack_hendricks.jpg" class="img-responsive" alt="Mack Hendricks picture">
+					</div>
+				</div>
+				<div class="col-md-6  col-md-pull-6 animate-box" data-animate-effect="fadeInRight">
+					<h2>Mack Hendricks</h2>
+					<p>Mack obtained a Bachelor and Masters of Science in Computer Science from Oakland University. He has worked for large Silicon Valley-based companies for most of his 20-year career, including 5 years at Sun Microsystems and 10 years at Oracle Corporation. In parallel, Mack has built companies in the restaurant and technology sector. One primary principle driving Mack is setting up a framework that allows generational wealth to grow and be passed down to his kids, grandkids, great grandkids and so on.</p>
+				</div>
+			</div>
+
+			<div class="row team-item gtco-team">
+				<div class="col-md-6 col-md-pull-1 animate-box"  data-animate-effect="fadeInLeft">
+					<div class="img-shadow">
+						<img src="http://www.trainx.ai/wp-content/uploads/2018/01/jeseekia-e1518128156681.jpg" class="img-responsive" alt="Jeseekia Vaughn picture">
+					</div>
+				</div>
+				<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+					<h2>Jeseekia Vaughn</h2>
+					<p>Jeseekia is a Software Engineer, primarily focused on full stack web application development. Through her company Fully Developed, LLC she services clients using various languages including HTML, CSS, JavaScript, Python, PHP, and SQL. She is an avid learner, currently training in Artificial Intelligence Engineering. Jeseekia is passionate about exposing others to engineering and development through teaching and mentoring.</p>
+				</div>
+			</div>
+
+			<div class="row team-item gtco-team">
+				<div class="col-md-6 col-md-push-7 animate-box"  data-animate-effect="fadeInRight">
+					<div class="img-shadow">
+						<img src="static/images/aubrey_agee.jpg" class="img-responsive" alt="Aubrey Agee picture">
+					</div>
+				</div>
+				<div class="col-md-6 col-md-pull-6 animate-box" data-animate-effect="fadeInRight">
+					<h2>Aubrey Agee</h2>
+					<p>Aubrey has spent 13 years in the tech entrepreneurial space by launching tech ventures, organizing tech training and creating hackathons.  As the Director of Innovation Warriors at Wayne State University he has reached over 4,000 participants in their exploration of entrepreneurship. Aubrey has guided 800 individuals to generate their own business models and helped over 200 businesses launch. Over 100 ventures are generating revenue within the seven years of Aubrey’s leadership over the Innovation Warriors.
+</p>
+				</div>
+			</div>
+
+				<div class="row team-item gtco-team-reverse">
+					<div class="col-md-6 col-md-pull-1 animate-box" data-animate-effect="fadeInRight">
+						<div class="img-shadow">
+							<img src="static/images/edward_carrington.jpg" class="img-responsive" alt="Edward Carrignton picture">
+						</div>
+					</div>
+					<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+						<h2>Edward Carrington</h2>
+						<p>Edward is a 3X Startup Founder with a unique background in banking, urban real estate development, and code. Understanding the importance of learning how to formally write code, Edward decided to attend a local bootcamp back in 2018 that introduced him to a number of concepts and frameworks including: Java, Python, Spring MVC, SQL, HTML5/CSS, JavaScript, JSON, GIT, SoapUI, Fiddler, Jenkins, Agile, and more.</p>
+					</div>
+				</div>
+
+
+
+				<div class="row team-item gtco-team">
+					<div class="col-md-6 col-md-push-7 animate-box"  data-animate-effect="fadeInRight">
+						<div class="img-shadow">
+							<img src="static/images/nikki_evelyn.jpg" class="img-responsive" alt="Nikki Evelyn picture">
+						</div>
+					</div>
+					<div class="col-md-6 col-md-pull-6 animate-box" data-animate-effect="fadeInRight">
+						<h2>Nikki Evelyn</h2>
+						<p>With a Bachelors in Public Relations and a Masters in Communications, Nikki changed her career path after participating in Detroit Labs’ Javascript Apprenticeship. Nikki is currently working as an Application Developer.  Over the course of her career in tech she has worked on award winning testing software and assisted with the launch of the Detroit Chapter of Black Girls Code through General Motors. Nikki is passionate about exposure and equality in the tech industry and has spent time teaching coding classes  to underserved youth through various organizations. She is also passionate about diversity in tech and co-founded Detroit Black Tech's "Hacking with the Homies"  meet up.
+	</p>
+					</div>
+				</div>
+
+				<div class="row team-item gtco-team">
+					<div class="col-md-6 col-md-pull-1 animate-box"  data-animate-effect="fadeInLeft">
+						<div class="img-shadow">
+							<img src="static/images/renee_hudson.jpg" class="img-responsive" alt="Renee Hudson picture">
+						</div>
+					</div>
+					<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+						<h2>Renee Hudson</h2>
+						<p>Renee Hudson is a software quality assurance engineer at StockX, Detroit's tech unicorn e-commerce platform. At StockX Renee champions quality by creating process around testing at her fast growing start up company. Currently she is the lead QA on the international experience team where she designs testing plans for android, iOS and web platforms to ensure an authentic high quality user experience for international StockX customers. Renee earned her B.A. in Women's Studies from the University of Michigan- Ann Arbor in 2014 along with completing a coding bootcamp at Grand Circus through the ExperienceIT program in 2016. Renee strongly believes in community engagement to build a tech ecosystem in Detroit that reflects the real world. In 2019, she co-founded Hacking with the Homies a meetup group located in downtown Detroit with a mission to connect, support and empower tech professionals and those looking to transition into a tech career. For fun Renee loves to travel and does travel counseling for individuals planning a trips to visit Ghana in West Africa!</p>
+					</div>
+				</div>
+	</section>
+
+	<section id="gtco-contact" data-section="contact">
+		<div class="container">
+			<div class="row row-pb-md">
+				<div class="col-md-8 col-md-offset-2 heading animate-box" data-animate-effect="fadeIn">
+					<h1>Contact Us</h1>
+					<p class="sub">We are constantly looking to grow our community and looking to partner with organizations that believe in our mission</p>
+					<p class="subtle-text animate-box" data-animate-effect="fadeIn">Contact</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-md-push-6 animate-box">
+					<form id="contact-form" action="#">
+						<div class="form-group">
+							<label for="name" class="sr-only">Name</label>
+							<input type="text" class="form-control" placeholder="Name" id="name">
+						</div>
+						<div class="form-group">
+							<label for="email" class="sr-only">Purpose</label>
+							<select class="form-control" id="purpose">
+							<option>Select Purpose for Contacting Us</option>
+					    <option>Want to Sponsor Us</option>
+					    <option>Want to Join</option>
+					    <option>Want General Info</option>
+					  </select>
+						</div>
+						<div class="form-group">
+							<label for="email" class="sr-only">Email</label>
+							<input type="email" class="form-control" placeholder="Email" id="email">
+						</div>
+						<div class="form-group">
+							<label for="message" class="sr-only">Message</label>
+							<textarea name="message" id="message" class="form-control" cols="30" rows="7" placeholder="Message"></textarea>
+						</div>
+						<div class="form-group">
+							<input type="submit" value="Send Message" class="btn btn-primary">
+						</div>
+					</form>
+				</div>
+				<div class="col-md-4 col-md-pull-6 animate-box">
+					<div class="gtco-contact-info">
+						<ul>
+							<li class="address">4160 Cass Ave, Suite B. Detroit, MI 48201</li>
+							<li class="phone"><a href="tel://13137891310">+1 313-789-1310</a></li>
+							<li class="email"><a href="mailto:info@detroitblacktech.com">info@detroitblacktech.com</a></li>
+							<li class="url"><a href="#">http://detroitblacktech.org</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer id="gtco-footer" role="contentinfo">
+		<div class="container">
+
+			<div class="row copyright">
+				<div class="col-md-12">
+					<p class="pull-left">
+						<small class="block">&copy; 2019-2020 Detroit Black Tech. All Rights Reserved.</small>
+						<small class="block">Designed by Detroit Black Tech</small>
+					</p>
+					<p class="pull-right">
+						<ul class="gtco-social-icons pull-right">
+							<li><a href="https://twitter.com/detroitintech"><i class="icon-twitter"></i></a></li>
+							<li><a href="https://www.facebook.com/detroitblacktech/"><i class="icon-facebook"></i></a></li>
+							<!--<li><a href=""><i class="icon-linkedin"></i></a></li>-->
+							<!--<li><a href="#"><i class="icon-dribbble"></i></a></li>-->
+						</ul>
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+
+	<!-- jQuery -->
+	<script src="static/js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="static/js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="static/js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="static/js/jquery.waypoints.min.js"></script>
+	<!-- Stellar -->
+	<script src="static/js/jquery.stellar.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="static/js/jquery.magnific-popup.min.js"></script>
+	<script src="static/js/magnific-popup-options.js"></script>
+	<!-- Main -->
+	<script src="static/js/main.js"></script>
+	{% block frontend_js %}
+	{% endblock %}
+
+	</body>
+</html>

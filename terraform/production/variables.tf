@@ -23,5 +23,9 @@ variable "repo" {
 }
 
 variable "branch" {
-        default="staging"
+        default="master"
+}
+
+variable "production_ip" {
+	default="104.248.108.28"
 }

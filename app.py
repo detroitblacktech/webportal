@@ -1,14 +1,15 @@
 #!/usr/bin/env python
 
-import os, re, json, subprocess, urllib.parse, glob,datetime,csv
+import os, re, json, subprocess, urllib.parse, glob,csv
+from datetime import datetime
 from flask import Flask, render_template, request, redirect, flash, url_for, jsonify
 #from database import *
 import logging
 from logging import Formatter, FileHandler
 
 # import modules
-from modules.email import *
-from modules.streaming import *
+from modules.email_api import *
+from modules.slack_api import *
 from util import time_funcs, parse_json
 
 # flask app and db settings
@@ -34,6 +35,11 @@ def init_app():
 def index():
     return render_template('index.html')
 
+@app.route('/conference')
+def hwthdc():
+    return render_template('hwthdc.html')
+
+
 @app.route('/email', methods=['POST'])
 def email():
     # send an email
@@ -49,7 +55,9 @@ def email():
             print(key,value)
 
         send_email(recipients=recipients, text_body=text_body, data=data)
-        send_stream(data=data, dt=dt)
+        #Send slack message to leads channel
+        message = "New Web Contact Lead:\nName: {}\nEmail: {}\nPurpose: {}\nMessage: {}".format(data['name'],data['email'],data['purpose'],data['message'])
+        send_slack(message,"webleads")
 
         return jsonify(
             status=200,

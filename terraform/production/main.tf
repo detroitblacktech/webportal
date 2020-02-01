@@ -9,7 +9,7 @@ data "digitalocean_ssh_key" "ssh_key" {
 
 
 resource "digitalocean_droplet" "webserver" {
-        name = "${var.dropletname}-${count.index}"
+        name = "${var.dropletname}-${var.branch}-${count.index}"
         count = "${var.number_of_servers}"
         region = "nyc1"
         size="1gb"
@@ -48,9 +48,12 @@ resource "digitalocean_droplet" "webserver" {
 
 
 
-resource "digitalocean_record" "A-staging" {
-  domain = "detroitblacktech.org"
-  type = "A"
-  name = "staging"
-  value = "${digitalocean_droplet.webserver.ipv4_address}"
+
+data "digitalocean_floating_ip" "dbt_production_ip" {
+  ip_address = "${var.production_ip}"
+}
+
+resource "digitalocean_floating_ip_assignment" "dbt_assignment" {
+  ip_address = "${data.digitalocean_floating_ip.dbt_production_ip.ip_address}"
+  droplet_id = "${digitalocean_droplet.webserver.id}"
 }

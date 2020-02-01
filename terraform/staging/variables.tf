@@ -25,3 +25,11 @@ variable "repo" {
 variable "branch" {
         default="staging"
 }
+
+variable "production" {
+	default="false"
+}
+
+variable "staging" {
+	default="false"
+}

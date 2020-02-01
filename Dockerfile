@@ -1,4 +1,4 @@
-FROM python:3.4
+FROM python:3.6
 WORKDIR /usr/src/dbt
 COPY build/requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
