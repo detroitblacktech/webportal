@@ -32,7 +32,7 @@ resource "digitalocean_droplet" "webserver" {
           "export PATH=$PATH:/usr/bin",
           "git clone ${var.repo} -b ${var.branch}",
           "cd webportal",
-	  "export SLACK_API_TOKEN=${var.slack_api_token}
+	  "export SLACK_API_TOKEN=${var.slack_api_token},
           "./deploy.sh docker",
           "sleep 20"
         ]
