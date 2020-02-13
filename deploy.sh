@@ -1,6 +1,4 @@
 #!/bin/bash
-echo $SLACK_API_TOKEN
-exit
 # Check if in development mode
 
 if [ "$2" == "dev" ]; then
