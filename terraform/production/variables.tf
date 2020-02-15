@@ -2,6 +2,10 @@ variable "do_token" {
 
 }
 
+variable "slack_api_token" {
+
+}
+
 variable "prefix" {
 	default=""
 }
@@ -23,9 +27,13 @@ variable "repo" {
 }
 
 variable "branch" {
-        default="master"
+        default="staging"
 }
 
-variable "production_ip" {
-	default="104.248.108.28"
+variable "production" {
+	default="false"
+}
+
+variable "staging" {
+	default="false"
 }
