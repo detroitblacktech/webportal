@@ -2,6 +2,10 @@ variable "do_token" {
 
 }
 
+variable "slack_api_token" {
+
+}
+
 variable "prefix" {
 	default=""
 }

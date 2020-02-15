@@ -313,6 +313,7 @@ h1, h2, h3, h4, h5, h6, figure {
   #gtco-hero .text-left {
     text-align: center !important;
   }
+
 }
 @media screen and (max-width: 480px) {
   #gtco-hero .btn {
@@ -425,21 +426,45 @@ h1, h2, h3, h4, h5, h6, figure {
   position: relative;
   z-index: 10;
 }
-@media screen and (max-width: 768px) {
-  .gtco-cover {
+
+.conference-gtco-cover {
+  height: 900px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+@media screen and (min-width: 310px) and (max-width: 414px) {
+  .conference-gtco-cover {
     height: 600px;
+    background-image: url('/static/images/hwthdc414_main.png') !important;
+    background-size:contain;
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 768px) {
+  .conference-gtco-cover {
+    height: 600px;
+    background-image: url('/static/images/hwthdc768_main.png') !important;
+    background-size:contain;
+  }
+}
+
+
 .gtco-cover .display-t,
 .gtco-cover .display-tc {
   height: 900px;
   display: table;
   width: 100%;
 }
+
 @media screen and (max-width: 768px) {
   .gtco-cover .display-t,
   .gtco-cover .display-tc {
     height: 600px;
+
   }
 }
 .gtco-cover.gtco-cover-sm {
