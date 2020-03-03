@@ -19,6 +19,21 @@ body {
   background: #fff;
 }
 
+svg {
+  fill: #fff;
+}
+
+svg:hover {
+  fill: #7ED321;
+}
+a.js-gotop svg:hover {
+  fill:#fff
+}
+
+a.social svg svg:hover {
+  fill:#7ED321;
+}
+
 #page {
   position: relative;
   overflow-x: hidden;
@@ -51,7 +66,6 @@ a {
 a:hover, a:active, a:focus {
   color: #7ED321;
   outline: none;
-  text-decoration: none;
 }
 
 p {
@@ -656,7 +670,6 @@ h1, h2, h3, h4, h5, h6, figure {
 #gtco-contact .form-control {
   height: 70px;
   font-size: 18px;
-  box-shadow: none !important;
   border: 1px solid #cccccc;
   padding-left: 20px;
   padding-right: 20px;
