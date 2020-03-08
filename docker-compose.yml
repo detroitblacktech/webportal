@@ -1,0 +1,15 @@
+version: '3.7'
+services:
+  dsiprouter-app:
+    build: .
+    restart: always
+    ports:
+      - "80:80"
+    volumes:
+      - "$PWD:/usr/src/dbt"
+    networks:
+      - dsiprouter-web
+      - default
+
+networks:
+  dsiprouter-web:
