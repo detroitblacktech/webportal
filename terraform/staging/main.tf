@@ -32,6 +32,7 @@ resource "digitalocean_droplet" "webserver" {
         connection {
         user = "root"
         type = "ssh"
+        host = digitalocean_droplet.webserver.ipv4_address
         private_key = "${file(var.pvt_key)}"
         timeout = "10m"
         }
