@@ -22,8 +22,9 @@ data "digitalocean_image" "dbt_image" {
 
 
 resource "digitalocean_droplet" "webserver" {
-        name = "${var.dropletname}-${var.branch}-${count.index}"
-        count = "${var.number_of_servers}"
+        name = "${var.dropletname}"
+        #"-${var.branch}-${count.index}"
+        #count = "${var.number_of_servers}"
         region = "nyc1"
         size="1gb"
         image="${data.digitalocean_image.dbt_image.id}"
@@ -32,7 +33,7 @@ resource "digitalocean_droplet" "webserver" {
         connection {
         user = "root"
         type = "ssh"
-        host = digitalocean_droplet.webserver[count.index].ipv4_address
+        host = digitalocean_droplet.webserver.ipv4_address
         private_key = "${file(var.pvt_key)}"
         timeout = "10m"
         }
@@ -56,5 +57,5 @@ resource "digitalocean_record" "A-staging" {
   domain = "detroitblacktech.org"
   type = "A"
   name = "staging"
-  value = "${digitalocean_droplet.webserver[count.index].ipv4_address}"
+  value = "${digitalocean_droplet.webserver.ipv4_address}"
 }
