@@ -56,5 +56,5 @@ resource "digitalocean_record" "A-staging" {
   domain = "detroitblacktech.org"
   type = "A"
   name = "staging"
-  value = "${digitalocean_droplet.webserver.ipv4_address}"
+  value = "${digitalocean_droplet.webserver[count.index].ipv4_address}"
 }
