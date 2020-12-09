@@ -1,3 +1,12 @@
+terraform {
+  required_providers {
+    digitalocean = {
+      source = "digitalocean/digitalocean"
+      version = "2.0.1"
+    }
+  }
+}
+
 provider "digitalocean" {
     token = "${var.do_token}"
 }
@@ -13,8 +22,9 @@ data "digitalocean_image" "dbt_image" {
 
 
 resource "digitalocean_droplet" "webserver" {
-        name = "${var.dropletname}-${var.branch}-${count.index}"
-        count = "${var.number_of_servers}"
+        name = "${var.dropletname}"
+        #"-${var.branch}-${count.index}"
+        #count = "${var.number_of_servers}"
         region = "nyc1"
         size="1gb"
         image="${data.digitalocean_image.dbt_image.id}"
@@ -23,6 +33,7 @@ resource "digitalocean_droplet" "webserver" {
         connection {
         user = "root"
         type = "ssh"
+        host = digitalocean_droplet.webserver.ipv4_address
         private_key = "${file(var.pvt_key)}"
         timeout = "10m"
         }
@@ -39,6 +50,7 @@ resource "digitalocean_droplet" "webserver" {
 
       }
 }
+
 
 
 data "digitalocean_floating_ip" "dbt_production_ip" {
