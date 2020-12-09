@@ -453,7 +453,7 @@ h1, h2, h3, h4, h5, h6, figure {
 @media screen and (min-width: 310px) and (max-width: 414px) {
   .conference-gtco-cover {
     height: 600px;
-    background-image: url('/static/images/hwthdc414_main.png') !important;
+    background-image: url('/static/images/2021/hwthdc414_main.png') !important;
     background-size:contain;
   }
 }
@@ -461,7 +461,7 @@ h1, h2, h3, h4, h5, h6, figure {
 @media screen and (min-width: 768px) and (max-width: 768px) {
   .conference-gtco-cover {
     height: 600px;
-    background-image: url('/static/images/hwthdc768_main.png') !important;
+    background-image: url('/static/images/2021/hwthdc768_main.png') !important;
     background-size:contain;
   }
 }
