@@ -36,7 +36,17 @@ def index():
     return render_template('index.html')
 
 @app.route('/conference')
+@app.route('/conference/2021')
 def hwthdc():
+    return render_template('hwthdc_2021.html')
+
+@app.route('/register')
+@app.route('/register/2021')
+def register():
+    return render_template('register_2021.html')
+
+@app.route('/conference/2020')
+def hwthdc_archive():
     return render_template('hwthdc.html')
 
 

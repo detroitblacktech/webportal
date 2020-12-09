@@ -1,0 +1,460 @@
+<!DOCTYPE HTML>
+{% from 'util.jinja2.html' import link_tag, script_tag, tracked_link, img_tag %}
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>DBT: Hacking With The Homies Developer Conference</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="This is the first Software Developer Conference with a 100% focus on Black and Brown software developers and it's popping off in Detroit." />
+	<meta name="keywords" content="detroit, black, software developers, designers, project managers, devops" />
+	<meta name="author" content="Detroit Black Tech" />
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="Hacking With The Homies Developer Conference"/>
+	<meta property="og:image" content="http://detroitblacktech.org/static/images/2021/hwthdc_social_image.jpg"/>
+	<meta property="og:url" content="http://hackingwiththehomies.org"/>
+	<meta property=”og:type” content=”website” />
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content="This is the first Software Developer Conference with a 100% focus on Black and Brown software developers"/>
+	<meta name="twitter:title" content="Hacking With The Homies Developer Conference" />
+	<meta name="twitter:image" content="http://detroitblacktech.org/static/images/2021/hwthdc_social_image.jpg" />
+	<meta name="twitter:url" content="http://hackingwiththehomies.org" />
+	<meta name="twitter:card" content="summary" />
+
+	<!-- livezilla.net PLACE SOMEWHERE IN BODY -->
+	<script type="text/javascript" id="5f8ef76d45ef7c1a1ff9a1d9443d3250" src="//dopensource.com/livezilla/script.php?id=5f8ef76d45ef7c1a1ff9a1d9443d3250" defer></script>
+	<!-- livezilla.net PLACE SOMEWHERE IN BODY -->
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156296463-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-156296463-1');
+</script>
+
+
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="{{url_for('static', filename='./css/animate.css')}}">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{{url_for('static', filename='./css/icomoon.css')}}">
+	<!-- Themify Icons-->
+	<link rel="stylesheet" href="{{url_for('static', filename='./css/themify-icons.css')}}">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="{{url_for('static', filename='./css/bootstrap.css')}}">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="{{url_for('static', filename='./css/magnific-popup.css')}}">
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="{{url_for('static', filename='./css/owl.carousel.min.css')}}">
+
+	<link rel="stylesheet" href="{{url_for('static', filename='./css/owl.theme.default.min.css')}}">
+	<!-- Flexslider -->
+	<link rel="stylesheet" href="{{url_for('static', filename='./css/flexslider.css')}}">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="{{url_for('static', filename='./css/style_2021.css')}}">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+
+	<div class="gtco-loader"></div>
+
+	<div id="page">
+	<nav class="gtco-nav" role="navigation">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 col-xs-8">
+					<!--<div id="gtco-logo"><a href="index.html">Detroit Black Tech</a></div> -->
+				</div>
+				<div class="col-xs-10 text-right menu-1 main-nav">
+					<ul>
+						<li><a href="/" class="external">Home</a></li>
+						<li><a href="/#about" class="external">About</a></li>
+            <li><a href="/#initiatives" class="external">Initiatives</a></li>
+						<li><a href="/#initiatives" class="external">Events</a></li>
+						<li class="active"><a href="#" data-nav-section="conference-home">Conference</a></li>
+						<li><a href="/#gtco-our-team" class="external">Our Team</a></li>
+							<li><a href="#" data-nav-section="contact">Contact Us</a></li>
+						<li class="btn-cta"><a href="/register" class="external"><span>Register</span></a></li>
+						<!-- For external page link -->
+						<!-- <li><a href="http://freehtml5.co/" class="external">External</a></li> -->
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</nav>
+
+	<section id="gtco-hero" class="conference-gtco-cover" style="background-image: url('static/images/2021/hwthdc_main_2021.png')"  data-section="conference-home"  data-stellar-background-ratio="0.0">
+    <div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-md-offset-0 text-center">
+					<div class="display-t">
+						<div class="display-tc">
+							<!--<p class="gtco-video-link animate-box" data-animate-effect="fadeIn"><a href="https://vimeo.com/381541025" class="popup-vimeo"><i class="icon-controller-play"></i></a></p> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="gtco-about" data-section="conference-sponsors">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 heading animate-box" data-animate-effect="fadeIn">
+					<h1>Previous Sponsors</h1>
+					<img src="static/images/hwth2020_sponsors.png" height="300" style="max-width:100%;height:auto;" alt="HWTH Developer Conference 2020 Sponsors">
+					<p class="sub"></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="gtco-about" data-section="conference-about">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 heading animate-box" data-animate-effect="fadeIn">
+					<h1>Designed For Us</h1>
+					<p class="sub">This is the first Software Developer Conference with a 100% focus on Black and Brown software developers and it's popping off in Detroit.
+					This conference is an extension to the bi-weekly events that we have throughout the year.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="agenda" data-section="practice-areas">
+		<div class="container">
+			<div class="row row-pb-md">
+				<div class="col-md-8 col-md-offset-2 heading animate-box" data-animate-effect="fadeIn">
+					<h1>Conference Agenda</h1>
+					<p class="sub" style="font-weight:bold">February 24 & 25, 2020<br>Location: Virtual</p>
+
+					<!--<p class="subtle-text animate-box" data-animate-effect="fadeIn">Initiatives</p> -->
+					<a href="/register" class="btn btn-primary" role="button" aria-pressed="true" target="_blank">Register Now</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<h3>Infrastructure / DevOp’s (Day 1) </h3>
+					<ul>
+						<li>Opening Session (12pm-1pm) (DBT/HWTH Intro and Sponsors)</li>
+						<li>Deploying your app to the Cloud (1pm-2pm)</li>
+						<li>Automating Deployments using DevOp's (2pm-3pm)</li>
+						<li>Managing Secrets across Multiple Clouds (3pm-4pm)</li>
+						<li>Moving My Database to the Cloud: What You Need to Know (4pm-5pm)</li>
+					</ul>
+				</div>
+				<div class="col-md-6">
+					<h3>Application Development (Day 2) </h3>
+					<ul>
+						<li>Topic TBD (Sponsored by Duo Security, a Cisco Company) (12pm-1pm)</li>
+						<li>Refactoring: For the Cloud (1pm-2pm)</li>
+						<li>Contain Yourself:  Containers (2pm-3pm)</li>
+						<li>IoT: Integrating with Connected Devices (3pm-4pm)</li>
+						<li>Continuous Integration: Jenkins vs Azure Pipelines vs Circle Ci (4pm-5pm)</li>
+						<br><br>
+					</ul>
+				</div>
+			</div>
+		</div>
+<!--
+			<div class="row">
+				<div class="col-md-6">
+					<div class="gtco-practice-area-item animate-box">
+						<div class="gtco-icon">
+							<img src="static/images/dbt_podcast_thumbnail.png" alt="Hacking With The Homies">
+							9:00am
+						</div>
+						<div class="gtco-copy">
+							<h3>Welcome & Keynote</h3>
+							<p>Welcome and inspirational message</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="gtco-practice-area-item animate-box">
+						<div class="gtco-icon">
+							<img src="static/images/bryan_campbell_thumbnail.jpg" alt="Hacking With The Homies">
+							9:30am
+						</div>
+						<div class="gtco-copy">
+							<h3>Working with GoLang (aka GO)</h3>
+								<h4>Speaker: Bryan Campbell &nbsp<a href="https://www.linkedin.com/in/bryanlcampbell/" target="_blank"><i class="icon-linkedin"></i></a></h4>
+							<p>Will explain why large companies in Metro Detroit are moving to GO.  Therefore, there is high demand (which translates to higher saleries). You will write a simple GO application that shows the value of the language</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+
+					<div class="gtco-practice-area-item animate-box">
+						<div class="gtco-icon">
+							<img src="static/images/brianna_mccullough.jpg" alt="Podcast Series" height="100" width="100">
+							10:15am
+						</div>
+						<div class="gtco-copy">
+							<h3>DevOps - Where Infrastructure and Coding Meets </h3>
+							<h4>Speaker: Brianna Mccullough &nbsp<a href="https://twitter.com/brilimitless" target="_blank"><i class="icon-twitter"></i></a></h4>
+							<p>We will discuss how DevOp’s is the perfect way to transition into coding.  The presenter will discuss her journey from being a traditional Network Engineer into joining the DevOp’s automation team.
+								She will introduce Ansible and demonstrate how it’s used to automate the deployment of applications</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="gtco-practice-area-item animate-box">
+						<div class="gtco-icon">
+							<img src="static/images/briant_anthony.jpg" height="100" alt="Briant Anthony">
+							11am
+						</div>
+						<div class="gtco-copy">
+							<h3>Blockchain Development using Solidity</h3>
+							<h4>Speaker: Briant Anthony &nbsp<a href="https://www.linkedin.com/in/briantanthony/" target="_blank"><i class="icon-linkedin"></i></a></h4>
+							<p>Blockchain development may look intimidating, but it’s really not.
+								We will explain why more black and brown folks need to jump in this space and
+								we will write a simple application that will store data in the blockchain and
+								use another computer to access the data from the blockchain.
+								Hence, demonstrating the distributed capability of Blockchain technology</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+						<div class="text-center" style="margin-bottom:50px;">
+							<h3>12pm: Lunch and Fireside Talks </h3>
+							<h4>Lunch is included in your ticket price</h4>
+						</div>
+				 </div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+
+					<div class="gtco-practice-area-item animate-box">
+						<div class="gtco-icon">
+							<img src="static/images/jeseekia_vaughn-original.jpg" alt="Hacking With The Homies" height="100" width="100">
+							1:15pm
+						</div>
+						<div class="gtco-copy">
+							<h3>AI - Crawl, Walk, Run</h3>
+							<h4>Speaker: Jeseekia Vaugh &nbsp<a href="https://twitter.com/JeseekiaVaughn"><i class="icon-twitter"></i></a></h4>
+							<p>AI is complicated, but it’s the future.  So, in this session, we will walk through a coding example that uses AI to predict when the mail carrier will arrive.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="gtco-practice-area-item animate-box">
+						<div class="gtco-icon">
+							<img src="static/images/andrew_cameron.jpg" height="100" alt="Hacking With The Homies">
+							2pm
+						</div>
+						<div class="gtco-copy">
+							<h3>Security - Customer Identity and Access Management</h3>
+							<h4>Speaker: Andrew Cameron &nbsp<a href="https://www.linkedin.com/in/kandrewcameron/" target="_blank" class="icon-linkedin"></i></a></h4>
+							<p>Security cant happen without identity, knowing who your customers are and how to keep them secure will be one of the most critical aspects of any app or service that you build.
+								With Customer Identity and Access Management (CIAM) your solutions will leverage the most advanced and secure technologies available today.
+								 Andrew will provide an overview of what CIAM is and how to leverage it in your solutions</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="gtco-practice-area-item animate-box">
+						<div class="gtco-icon">
+							<img src="static/images/xavier_johnson.jpg" height="100" alt="Hacking With The Homies">
+							2:45pm
+						</div>
+						<div class="gtco-copy">
+							<h3>Security - Secure By Design</h3>
+							<h4>Speaker: Xavier D. Johnson &nbsp<a href="https://www.youtube.com/user/723Zay/featured"  target="_blank" class="icon-youtube"></i></a></h4>
+							<p>We will discuss how to architect an application with security in mind</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="gtco-practice-area-item animate-box">
+						<div class="gtco-icon">
+							<img src="static/images/angie_jones.jpg" height="100" alt="Hacking With The Homies">
+							3:30pm
+						</div>
+						<div class="gtco-copy">
+							<h3>Your Tests Lack Vision: Adding Eyes to Your Automation Framework</h3>
+							<h4>Speaker: Angie Jones &nbsp<a href="https://twitter.com/techgirl1908" target="_blank" class="icon-twitter"></i></a></h4>
+							<p>Learn when and where to add visual assertions to your existing automation framework, how to work with various match levels including ones suitable for dynamic content, and how to evaluate and resolve visual test results. There will be live coding!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="gtco-practice-area-item animate-box">
+						<div class="gtco-icon">
+							<img src="static/images/ofiliojo_ichaba.jpg" height="100" alt="Hacking With The Homies">
+							4:15pm
+						</div>
+						<div class="gtco-copy">
+							<h3>Kubernetes - Setting up your first cluster and deploying an app</h3>
+							<h4>Speaker: Ofiliojo Ichaba &nbsp<a href="https://www.linkedin.com/in/ofiliojo/" target="_blank" class="icon-linkedin"></i></a></h4>
+							<p>We will setup a cluster and deploy an app to the cluster.  We will discuss the benefits of deploying your application in Kubernetes</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="gtco-practice-area-item animate-box">
+						<div class="gtco-icon">
+							<img src="static/images/dbt_podcast_thumbnail.png" height="100" alt="Hacking With The Homies">
+							5:00-5:15pm
+						</div>
+					<div class="gtco-copy">
+						<h3>Closing Remarks and Thank You</h3>
+					</div>
+					</div>
+				</div>  -->
+  		</div>
+</section>
+
+<!--<section id="happy hour" data-section="practice-areas">
+	<div class="container">
+<div class="row">
+	<div class="col-md-12">
+			<div class="text-center" style="margin-bottom:50px;">
+				<h1>5:30pm-8:30pm: Happy Hour and Networking </h1>
+				<h4>Location: Altimetrik Collider, 1500 Woodward Ave floor 4, Detroit, MI 48226</h4>
+				<p class="sub"> 1 Block South of the conference (3 minute walk)</p>
+				<img src="static/images/happy_hour_location.png"alt="Happy Hour Location">
+
+</section> -->
+
+	<section id="gtco-sponsor-conference" data-section="sponsor-conference">
+		<div class="container">
+			<div class="row row-pb-md">
+				<div class="col-md-8 col-md-offset-2 heading animate-box" data-animate-effect="fadeIn">
+					<h1>Sponsorship Opportunities</h1>
+					<p class="sub">We are looking for sponsors that see value in building better software products by having a diverse set of software developers that have different perspectives<br>
+					Our sponsorship packet can be found <a href="https://docs.google.com/presentation/d/e/2PACX-1vTD4ZhpbUaj1QQ8uHjM3lJYB1H3U096iEWTcd_qZQtmclw40SETo8ag3hK-QrvSGiB7tbzKjFlmNUOp/pub?start=false&loop=false&delayms=3000" target="_blank">here</a></p>
+					<!--<p class="subtle-text animate-box" data-animate-effect="fadeIn">Our Team</p> -->
+				</div>
+		</div>
+	</section>
+
+	<section id="gtco-contact" data-section="contact">
+		<div class="container">
+			<div class="row row-pb-md">
+				<div class="col-md-8 col-md-offset-2 heading animate-box" data-animate-effect="fadeIn">
+					<h1>Contact Us</h1>
+					<p class="sub">We are constantly looking to grow our community and looking to partner with organizations that believe in our mission</p>
+					<p class="subtle-text animate-box" data-animate-effect="fadeIn">Contact</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-md-push-6 animate-box" id="contact-thankyou">
+	         <span id='close' onclick='$(this).parent().hide();$("#contact-form")[0].reset();$("#contact-form").fadeIn();'>x
+	        </span>
+	        <h2>Thanks...</h2>
+	        <small>We'll get back to you as quickly as possible</small>
+	      </div>
+
+				<div class="col-md-6 col-md-push-6 animate-box">
+					<form id="contact-form" action="#">
+						<div class="form-group">
+							<label for="name" class="sr-only">Name</label>
+							<input type="text" class="form-control" placeholder="Name" id="name">
+						</div>
+						<div class="form-group">
+							<label for="email" class="sr-only">Purpose</label>
+							<select class="form-control" id="purpose">
+							<option>Select Purpose for Contacting Us</option>
+					    <option>Want to Sponsor the Conference</option>
+							<option>Question about the Conference</option>
+					    <option>Want General Info</option>
+					  </select>
+						</div>
+						<div class="form-group">
+							<label for="email" class="sr-only">Email</label>
+							<input type="email" class="form-control" placeholder="Email" id="email">
+						</div>
+						<div class="form-group">
+							<label for="message" class="sr-only">Message</label>
+							<textarea name="message" id="message" class="form-control" cols="30" rows="7" placeholder="Message"></textarea>
+						</div>
+						<div class="form-group">
+							<input type="submit" value="Send Message" class="btn btn-primary">
+						</div>
+					</form>
+				</div>
+				<div class="col-md-4 col-md-pull-6 animate-box">
+					<div class="gtco-contact-info">
+						<ul>
+							<li class="address">4160 Cass Ave, Suite B. Detroit, MI 48201</li>
+							<li class="phone"><a href="tel://13137891310">+1 313-789-1310</a></li>
+							<li class="email"><a href="mailto:info@detroitblacktech.org">info@detroitblacktech.org</a></li>
+							<li class="url"><a href="#">http://detroitblacktech.org</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer id="gtco-footer" role="contentinfo">
+		<div class="container">
+
+			<div class="row copyright">
+				<div class="col-md-12">
+					<p class="pull-left">
+						<small class="block">&copy; 2019-2020 Detroit Black Tech. All Rights Reserved.</small>
+						<small class="block">Designed by Detroit Black Tech</small>
+					</p>
+					<p class="pull-right">
+						<ul class="gtco-social-icons pull-right">
+							<li><a href="https://twitter.com/detroitintech"><i class="icon-twitter"></i></a></li>
+							<li><a href="https://www.facebook.com/detroitblacktech/"><i class="icon-facebook"></i></a></li>
+							<!--<li><a href=""><i class="icon-linkedin"></i></a></li>-->
+							<!--<li><a href="#"><i class="icon-dribbble"></i></a></li>-->
+						</ul>
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+
+	<!-- jQuery -->
+	<script src="static/js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="static/js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="static/js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="static/js/jquery.waypoints.min.js"></script>
+	<!-- Stellar -->
+	<script src="static/js/jquery.stellar.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="static/js/jquery.magnific-popup.min.js"></script>
+	<script src="static/js/magnific-popup-options.js"></script>
+	<!-- Main -->
+	<script src="static/js/main.js"></script>
+	{% block frontend_js %}
+	{% endblock %}
+
+	</body>
+</html>
