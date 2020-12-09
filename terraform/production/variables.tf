@@ -45,3 +45,7 @@ variable "role_id" {
 variable "secret_id" {
 	default=""
 }
+
+variable "production_ip" {
+	default="104.248.108.28"
+}
