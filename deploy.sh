@@ -1,5 +1,6 @@
 #!/bin/bash
 # Check if in development mode
+apt-get install -y nginx && cp ~/webportal/build/nginx.conf /etc/nginx/sites-available/default && systemctl restart nginx
 
 if [ "$2" == "dev" ]; then
 	volumemount="-v $(pwd):/usr/src/dbt"
@@ -12,14 +13,15 @@ case "$1" in
 	"native" | "")
 	python3 app.py
 	;;
-	"docker")
+	"docker"):
 	docker build -t dbtwebportal .
 
 	if [ "$2" != "dev" ]; then
 		sleep 30
 	fi
 
+
 	docker rm -f dbtwebportal-app
-	docker run -p 80:80 -dit --restart always $volumemount --name dbtwebportal-app  -e SLACK_API_TOKEN=$SLACK_API_TOKEN dbtwebportal
+	docker run -p 443:443 -dit --restart always $volumemount --name dbtwebportal-app  -e SLACK_API_TOKEN=$SLACK_API_TOKEN dbtwebportal
 	;;
 esac
