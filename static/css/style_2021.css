@@ -94,6 +94,11 @@ h1, h2, h3, h4, h5, h6, figure {
   background: #FFB501;
 }
 
+
+.border-right {
+    border-right: 1px solid black;
+}
+
 .gtco-nav {
   position: fixed;
   top: 0;

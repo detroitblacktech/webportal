@@ -16,6 +16,7 @@ from util import time_funcs, parse_json
 # TODO: settings should be read from encrypted file in production
 app = Flask(__name__)
 app.secret_key = 'not_for_production'
+app.config.from_pyfile('settings.py')
 # app.json_encoder = parse_json.CustomJSONEncoder
 # db = loadSession()
 

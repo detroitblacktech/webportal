@@ -11,6 +11,7 @@ DB_PASS=''
 # Possible values = (DEV,TEST, PROD)
 ENV='DEV'
 
+DEBUG=True
 
 # email server config
 MAIL_SERVER='smtp.gmail.com'
