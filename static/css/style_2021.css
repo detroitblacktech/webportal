@@ -115,6 +115,7 @@ h1, h2, h3, h4, h5, h6, figure {
   .gtco-nav {
     padding: 20px 0;
   }
+
 }
 .gtco-nav #gtco-logo {
   font-size: 30px;
@@ -331,6 +332,10 @@ h1, h2, h3, h4, h5, h6, figure {
 @media screen and (max-width: 480px) {
   #gtco-hero .text-left {
     text-align: center !important;
+  }
+  .agenda_header {
+    visibility: hidden;
+
   }
 
 }

@@ -43,10 +43,7 @@ resource "digitalocean_droplet" "webserver" {
           "export PATH=$PATH:/usr/bin",
           "git clone ${var.repo} -b ${var.branch}",
           "cd webportal",
-	  "export SLACK_API_TOKEN=${var.slack_api_token}",
-          "apt-get install -y nginx",
-          "cp build/nginx.conf /etc/nginx/sites-available/default",
-          "systemctl restart nginx",
+	        "export SLACK_API_TOKEN=${var.slack_api_token}",
           "./deploy.sh docker",
           "sleep 20"
         ]
