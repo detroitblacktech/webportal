@@ -1,6 +1,6 @@
 #!/bin/bash
 # Check if in development mode
-apt-get updates && apt-get install -y nginx && cp ~/webportal/build/nginx.conf /etc/nginx/sites-available/default && systemctl restart nginx
+apt-get update && apt-get install -y nginx && cp ~/webportal/build/nginx.conf /etc/nginx/sites-available/default && systemctl restart nginx
 
 if [ "$2" == "dev" ]; then
 	volumemount="-v $(pwd):/usr/src/dbt"
