@@ -1,5 +1,6 @@
 #!/bin/bash
 # Check if in development mode
+systemctl stop apt-daily.timer
 apt-get update
 while [ $? -eq 1 ]; do
 	apt-get install -y nginx 
