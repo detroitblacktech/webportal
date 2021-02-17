@@ -1,12 +1,6 @@
 #!/bin/bash
 # Check if in development mode
-systemctl stop apt-daily.timer
-apt-get update
-while [ $? -eq 1 ]; do
-	apt-get install -y nginx 
-done
-cp ~/webportal/build/nginx.conf /etc/nginx/sites-available/default 
-systemctl restart nginx
+
 
 if [ "$2" == "dev" ]; then
 	volumemount="-v $(pwd):/usr/src/dbt"
@@ -31,3 +25,9 @@ case "$1" in
 	docker run -p 443:443 -dit --restart always $volumemount --name dbtwebportal-app  -e SLACK_API_TOKEN=$SLACK_API_TOKEN dbtwebportal
 	;;
 esac
+
+
+apt-get update
+apt-get install -y nginx 
+cp ~/webportal/build/nginx.conf /etc/nginx/sites-available/default 
+systemctl restart nginx
